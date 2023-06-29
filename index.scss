@@ -6,18 +6,21 @@ $secondaryTeal: #00C44E;
 
 * {
     background-color: $secondaryGrey;
+    margin: 0;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/staticMontserrat/Montserrat-Medium.ttf') format('ttf'),
-}  
+    src: url('fonts/staticMontserrat/Montserrat-Medium.ttf') format('ttf');
+}
+// Seems to not be workikng but will come back to this at another time
 
-@mixin textToggle($color: #000, $font-size: 1rem, $property) {
+
+@mixin textToggle($color: #000, $font-size: 1rem, $font-weight: 100) {
     text-decoration: none;
-    font-family: $property;
-    font-size: $font-size;
     color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
 }
 
 @mixin centering {
@@ -26,13 +29,26 @@ $secondaryTeal: #00C44E;
     justify-content: center;
     text-align: center;
 }
+.banner {
+    @include centering();
+    @include textToggle($primaryGrey, 0.8rem, 700);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $secondaryTeal;
+}
 
 .topnav {
+    border: 1px solid black;
     @include centering();
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     a{
-        @include textToggle(black, 1rem, Montserrat);
-        padding: 50px;
+        @include textToggle(black, 0.8rem);
+        padding: 25px;
     }
     grid-template-columns: repeat(5, 1fr);
+    #logo {
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
 }

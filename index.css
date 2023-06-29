@@ -1,1 +1,23 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  background-color: #EEEEEE;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/staticMontserrat/Montserrat-Medium.ttf") format("ttf");
+}
+.topnav {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat";
+  grid-template-columns: repeat(5, 1fr);
+}
+.topnav a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 1rem;
+  color: black;
+  padding: 50px;
+}/*# sourceMappingURL=index.css.map */

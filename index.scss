@@ -1,0 +1,38 @@
+$primaryGrey: #D9D9D9;
+$secondaryGrey: #EEEEEE;
+$primaryTeal: #00FF75;
+$secondaryTeal: #14FF00;
+$secondaryTeal: #00C44E;
+
+* {
+    background-color: $secondaryGrey;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/staticMontserrat/Montserrat-Medium.ttf') format('ttf'),
+}  
+
+@mixin textToggle($color: #000, $font-size: 1rem, $property) {
+    text-decoration: none;
+    font-family: $property;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin centering {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topnav {
+    @include centering();
+    font-family: 'Montserrat';
+    a{
+        @include textToggle(black, 1rem, Montserrat);
+        padding: 50px;
+    }
+    grid-template-columns: repeat(5, 1fr);
+}

@@ -94,24 +94,25 @@
 
 .mainLandingContent {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.mainLandingContent .contentContainer {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
 }
-.mainLandingContent .contentLeft {
-  max-width: 600px;
-}
-.mainLandingContent .contentLeft .fourItems {
+.mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.mainLandingContent .contentLeft .fourItems h3 {
+.mainLandingContent .contentContainer .contentLeft .fourItems h3 {
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
 }
-.mainLandingContent .contentLeft .fourItems h4 {
+.mainLandingContent .contentContainer .contentLeft .fourItems h4 {
   font-size: 11px;
   font-family: sans-serif;
-}
-.mainLandingContent .contentLeft .contentRight {
-  max-width: 600px;
 }/*# sourceMappingURL=index.css.map */

@@ -95,11 +95,13 @@ $primaryYellow: #FFE600;
 .mainLandingContent {
     display: grid;
     align-items: center;
-    div{
-        max-width: 600px;
-    }
-        .contentLeft {
-            max-width: 600px;
+    justify-content: center;
+    height: 100vh;
+    .contentContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        .contentLeft { // LEFT CONTENT
             .fourItems {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -113,11 +115,9 @@ $primaryYellow: #FFE600;
                         font-family: sans-serif;
                     }
                 }
-                max-width: 600px;
             }
-            .contentRight {
-                max-width: 600px;
+            .contentRight { //RIGHT CONTENT
+                
             }
         }
-            
-}
+    }      

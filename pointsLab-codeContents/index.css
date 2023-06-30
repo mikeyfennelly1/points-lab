@@ -26,21 +26,27 @@
 }
 
 .topnav {
-  border: 1px solid black;
   display: grid;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  justify-items: center;
+  border: 1px solid black;
   font-family: "Montserrat", sans-serif;
-  grid-template-columns: repeat(5, 1fr);
 }
 .topnav a {
   text-decoration: none;
   color: black;
   font-size: 0.8rem;
   font-weight: 100;
-  padding: 25px;
+}
+.topnav .aLeft {
+  display: inline;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 700px;
+  justify-content: left;
+}
+.topnav .aRight {
+  display: inline;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 300px;
+  justify-self: right;
 }
 .topnav #logo {
   font-weight: bolder;

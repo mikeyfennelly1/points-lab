@@ -3,6 +3,7 @@ $secondaryGrey: #EEEEEE;
 $primaryTeal: #00FF75;
 $secondaryTeal: #14FF00;
 $secondaryTeal: #00C44E;
+$primaryYellow: #FFE600;
 
 * {
     background-color: $secondaryGrey;
@@ -28,6 +29,7 @@ $secondaryTeal: #00C44E;
     align-items: center;
     justify-content: center;
     text-align: center;
+    justify-items: center;
 }
 .banner {
     @include centering();
@@ -50,5 +52,39 @@ $secondaryTeal: #00C44E;
     #logo {
         font-weight: bolder;
         font-size: 1.2rem;
+    }
+    button {
+        max-width: fit-content;
+        background-color: $primaryYellow;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
+    }
+}
+
+.landingTitle {
+    max-width: 500px;
+    h1 {
+        @include textToggle(black, 4rem);
+    }
+    h5 {
+        margin-top: 5px;
+        @include textToggle(black, 1.25rem);
+        font-family: sans-serif;
+    }
+}
+
+.tryORlogin {
+    button {
+        max-width: fit-content;
+        background-color: $primaryYellow;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
+        margin: 20px;
+    }
+    a {
+        font-family: sans-serif;
+        @include textToggle(black, );
     }
 }

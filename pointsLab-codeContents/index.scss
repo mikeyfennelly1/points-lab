@@ -121,3 +121,9 @@ $primaryYellow: #FFE600;
             }
         }
     }      
+
+@media (max-width: 500px) {
+    .contentLeft {
+        float: left;
+    }
+}

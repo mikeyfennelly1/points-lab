@@ -115,4 +115,9 @@
 .mainLandingContent .contentContainer .contentLeft .fourItems h4 {
   font-size: 11px;
   font-family: sans-serif;
+}
+@media (max-width: 500px) {
+  .contentLeft {
+    float: left;
+  }
 }/*# sourceMappingURL=index.css.map */

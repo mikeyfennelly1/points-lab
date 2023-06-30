@@ -21,6 +21,8 @@
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #00C44E;
+  -webkit-text-decoration: dashed underline;
+          text-decoration: dashed underline;
 }
 
 .topnav {
@@ -78,7 +80,9 @@
   border-radius: 5px;
   padding: 10px;
   box-shadow: 10px, 10px, 2px black;
-  margin: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .tryORlogin a {
   font-family: sans-serif;
@@ -86,4 +90,28 @@
   color: black;
   font-size: 1rem;
   font-weight: 100;
+}
+
+.mainLandingContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.mainLandingContent .contentLeft {
+  max-width: 600px;
+}
+.mainLandingContent .contentLeft .fourItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.mainLandingContent .contentLeft .fourItems h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.mainLandingContent .contentLeft .fourItems h4 {
+  font-size: 11px;
+  font-family: sans-serif;
+}
+.mainLandingContent .contentLeft .contentRight {
+  max-width: 600px;
 }/*# sourceMappingURL=index.css.map */

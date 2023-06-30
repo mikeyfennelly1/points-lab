@@ -42,24 +42,14 @@ $primaryYellow: #FFE600;
 }
 
 .topnav {
-    display: grid;
     border: 1px solid black;
+    @include centering();
     font-family: 'Montserrat', sans-serif;
     a{
         @include textToggle(black, 0.8rem);
+        padding: 25px;
     }
-    .aLeft {
-        display: inline;
-        grid-template-rows: repeat(3, 1fr);
-        max-width: 700px;
-        justify-content: left;
-    }
-    .aRight {
-        display: inline;
-        grid-template-rows: repeat(2, 1fr);
-        max-width: 300px;
-        justify-self: right;
-    }
+    grid-template-columns: repeat(5, 1fr);
     #logo {
         font-weight: bolder;
         font-size: 1.2rem;

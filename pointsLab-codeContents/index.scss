@@ -43,24 +43,26 @@ $primaryYellow: #FFE600;
 
 .topnav {
     border: 1px solid black;
-    @include centering();
     font-family: 'Montserrat', sans-serif;
-    a{
-        @include textToggle(black, 0.8rem);
-        padding: 25px;
-    }
-    grid-template-columns: repeat(5, 1fr);
-    #logo {
-        font-weight: bolder;
-        font-size: 1.6rem;
-    }
-    button {
-        max-width: fit-content;
-        background-color: $primaryYellow;
-        border-radius: 5px;
-        padding: 10px;
-        box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+        a{
+            @include textToggle(black, 0.8rem);
+            padding-right: 20px;
+        }
+        #logo {
+            font-weight: bolder;
+            font-size: 1.6rem;
+        }
+        button {
+            max-width: fit-content;
+            background-color: $primaryYellow;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
+        }
 }
 
 .landingTitle {

@@ -44,7 +44,7 @@
 }
 .topnav #logo {
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .topnav button {
   max-width: -moz-fit-content;
@@ -96,7 +96,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
 }
 .mainLandingContent .contentContainer {
   display: grid;
@@ -106,6 +106,10 @@
 .mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(135, 135, 135);
+  border-top: 1px solid rgb(135, 135, 135);
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h3 {
   font-size: 20px;
@@ -116,6 +120,11 @@
   font-size: 11px;
   font-family: sans-serif;
 }
+.mainLandingContent .contentContainer .contentRight {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 @media (max-width: 500px) {
   .contentLeft {
     float: left;

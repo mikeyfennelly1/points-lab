@@ -52,7 +52,7 @@ $primaryYellow: #FFE600;
     grid-template-columns: repeat(5, 1fr);
     #logo {
         font-weight: bolder;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     button {
         max-width: fit-content;
@@ -96,7 +96,7 @@ $primaryYellow: #FFE600;
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
     .contentContainer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -105,6 +105,10 @@ $primaryYellow: #FFE600;
             .fourItems {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgb(135, 135, 135);
+                border-top: 1px solid rgb(135, 135, 135);
                     h3 {
                         font-size: 20px;
                         font-family: sans-serif;
@@ -116,9 +120,9 @@ $primaryYellow: #FFE600;
                     }
                 }
             }
-            .contentRight { //RIGHT CONTENT
-                
-            }
+        .contentRight {
+            max-width: fit-content; // Image not showing up for some reason. Will come back to fix later.
+        }
         }
     }      
 

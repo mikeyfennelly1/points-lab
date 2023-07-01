@@ -99,12 +99,15 @@
   height: 70vh;
 }
 .mainLandingContent .contentContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
+  min-width: 1200px;
+  position: relative;
 }
 .mainLandingContent .contentContainer .contentLeft {
   padding-top: 100px;
+  float: right;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
@@ -123,11 +126,6 @@
   font-size: 11px;
   font-family: sans-serif;
 }
-.mainLandingContent .contentContainer .contentRight {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
 @media (max-width: 500px) {
   .contentLeft {
     float: left;

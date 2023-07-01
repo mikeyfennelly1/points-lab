@@ -47,6 +47,8 @@ $primaryYellow: #FFE600;
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
     align-items: center;
         a{
             @include textToggle(black, 0.8rem);
@@ -104,6 +106,7 @@ $primaryYellow: #FFE600;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1200px;
         .contentLeft { // LEFT CONTENT
+            padding-top: 100px;
             .fourItems {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -123,7 +126,7 @@ $primaryYellow: #FFE600;
                 }
             }
         .contentRight {
-            max-width: fit-content; // Image not showing up for some reason. Will come back to fix later.
+            max-width: fit-content;
         }
         }
     }      

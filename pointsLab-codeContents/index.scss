@@ -2,12 +2,13 @@ $primaryGrey: #D9D9D9;
 $secondaryGrey: #EEEEEE;
 $primaryTeal: #00FF75;
 $secondaryTeal: #14FF00;
-$secondaryTeal: #00C44E;
+$secondaryTeal: #00d86c;
 $primaryYellow: #FFE600;
 
 * {
     background-color: $secondaryGrey;
     margin: 0;
+    overflow: hidden;
 }
 
 @font-face {
@@ -63,56 +64,65 @@ $primaryYellow: #FFE600;
             background-color: $primaryYellow;
             border-radius: 5px;
             padding: 10px;
-            box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
+            border: 1px solid;
         }
 }
 
-.landingTitle {
-    max-width: 500px;
-    h1 {
-        @include textToggle(black, 4rem);
-        #results {
-            text-decoration: underline $secondaryTeal 3px;
-        }
-        #stress{
-            text-decoration: line-through $secondaryTeal 3px;
-        }
-    }
-    h5 {
-        margin-top: 5px;
-        @include textToggle(black, 1.25rem);
-        font-family: sans-serif;
-    }
-}
-
-.tryORlogin {
-    button {
-        max-width: fit-content;
-        background-color: $primaryYellow;
-        border-radius: 5px;
-        padding: 10px;
-        box-shadow: 10px, 10px, 2px black; // also seems to be not working, will come back to fix
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    a {
-        font-family: sans-serif;
-        @include textToggle(black, );
-    }
-}
 
 .mainLandingContent {
     display: flex;
     .contentContainer{
         overflow-x: hidden;
         .contentLeft { // LEFT CONTENT
-            padding-top: 100px;
+            padding-top: 150px;
+            padding-left: 20px;
             position: absolute;
             left: 0%;
             z-index: 2;
             @media screen and (min-width: 1420px) {
                 left: calc(0.5*(100% - 1420px));
+            }
+            .landingTitle {
+                max-width: 590px;
+                h1 {
+                    @include textToggle(black, 5rem);
+                    #results {
+                        text-decoration: underline $secondaryTeal 3px;
+                    }
+                    #stress{
+                        text-decoration: line-through $secondaryTeal 3px;
+                    }
+                }
+                h5 {
+                    padding-top: 30px;
+                    @include textToggle(black, 1.25rem);
+                    font-family: sans-serif;
+                    line-height: 30px;
+                }
+            }
+            
+            .tryORlogin {
+                button {
+                    max-width: fit-content;
+                    background-color: $primaryYellow;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    padding: 10px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                }
+                    @media screen and (max-width: 768px) {
+                        min-width: 100%;
+                        max-width: 100%;
+                    }
+                a {
+                    font-family: sans-serif;
+                    @include textToggle(black, );
+                }
             }
             .fourItems {
                 display: grid;
@@ -125,6 +135,7 @@ $primaryYellow: #FFE600;
                         font-size: 20px;
                         font-family: sans-serif;
                         font-weight: bold;
+                        color: $secondaryTeal;
                     }
                     h4 {
                         font-size: 11px;
@@ -136,9 +147,13 @@ $primaryYellow: #FFE600;
                 position: absolute;
                 top: 95px;
                 left: 50%;
+                img {
+                    min-height: 900px;
+                }
                 @media screen and (max-width: 897px){
                     display: none;
                 }
+
         }
         }
     }

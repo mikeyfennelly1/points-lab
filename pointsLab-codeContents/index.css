@@ -1,6 +1,7 @@
 * {
   background-color: #EEEEEE;
   margin: 0;
+  overflow: hidden;
 }
 
 @font-face {
@@ -20,7 +21,7 @@
   font-family: "Montserrat", sans-serif;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #00C44E;
+  background-color: #00d86c;
   -webkit-text-decoration: dashed underline;
           text-decoration: dashed underline;
 }
@@ -52,52 +53,7 @@
   background-color: #FFE600;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 10px, 10px, 2px black;
-}
-
-.landingTitle {
-  max-width: 500px;
-}
-.landingTitle h1 {
-  text-decoration: none;
-  color: black;
-  font-size: 4rem;
-  font-weight: 100;
-}
-.landingTitle h1 #results {
-  -webkit-text-decoration: underline #00C44E 3px;
-          text-decoration: underline #00C44E 3px;
-}
-.landingTitle h1 #stress {
-  -webkit-text-decoration: line-through #00C44E 3px;
-          text-decoration: line-through #00C44E 3px;
-}
-.landingTitle h5 {
-  margin-top: 5px;
-  text-decoration: none;
-  color: black;
-  font-size: 1.25rem;
-  font-weight: 100;
-  font-family: sans-serif;
-}
-
-.tryORlogin button {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  background-color: #FFE600;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 10px, 10px, 2px black;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.tryORlogin a {
-  font-family: sans-serif;
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: 100;
+  border: 1px solid;
 }
 
 .mainLandingContent {
@@ -107,7 +63,8 @@
   overflow-x: hidden;
 }
 .mainLandingContent .contentContainer .contentLeft {
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-left: 20px;
   position: absolute;
   left: 0%;
   z-index: 2;
@@ -116,6 +73,58 @@
   .mainLandingContent .contentContainer .contentLeft {
     left: calc(0.5 * (100% - 1420px));
   }
+}
+.mainLandingContent .contentContainer .contentLeft .landingTitle {
+  max-width: 590px;
+}
+.mainLandingContent .contentContainer .contentLeft .landingTitle h1 {
+  text-decoration: none;
+  color: black;
+  font-size: 5rem;
+  font-weight: 100;
+}
+.mainLandingContent .contentContainer .contentLeft .landingTitle h1 #results {
+  -webkit-text-decoration: underline #00d86c 3px;
+          text-decoration: underline #00d86c 3px;
+}
+.mainLandingContent .contentContainer .contentLeft .landingTitle h1 #stress {
+  -webkit-text-decoration: line-through #00d86c 3px;
+          text-decoration: line-through #00d86c 3px;
+}
+.mainLandingContent .contentContainer .contentLeft .landingTitle h5 {
+  padding-top: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+.mainLandingContent .contentContainer .contentLeft .tryORlogin button {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #FFE600;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.mainLandingContent .contentContainer .contentLeft .tryORlogin a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 100;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
@@ -129,6 +138,7 @@
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
+  color: #00d86c;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h4 {
   font-size: 11px;
@@ -138,6 +148,9 @@
   position: absolute;
   top: 95px;
   left: 50%;
+}
+.mainLandingContent .contentContainer .contentRight img {
+  min-height: 900px;
 }
 @media screen and (max-width: 897px) {
   .mainLandingContent .contentContainer .contentRight {

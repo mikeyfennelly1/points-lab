@@ -109,8 +109,13 @@
 .mainLandingContent .contentContainer .contentLeft {
   padding-top: 100px;
   position: absolute;
-  left: 10%;
+  left: 0%;
   z-index: 2;
+}
+@media screen and (min-width: 1420px) {
+  .mainLandingContent .contentContainer .contentLeft {
+    left: calc(0.5 * (100% - 1420px));
+  }
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
@@ -133,4 +138,9 @@
   position: absolute;
   top: 95px;
   left: 50%;
+}
+@media screen and (max-width: 897px) {
+  .mainLandingContent .contentContainer .contentRight {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

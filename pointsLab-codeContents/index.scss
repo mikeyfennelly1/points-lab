@@ -71,6 +71,12 @@ $primaryYellow: #FFE600;
     max-width: 500px;
     h1 {
         @include textToggle(black, 4rem);
+        #results {
+            text-decoration: underline $secondaryTeal 3px;
+        }
+        #stress{
+            text-decoration: line-through $secondaryTeal 3px;
+        }
     }
     h5 {
         margin-top: 5px;
@@ -97,19 +103,14 @@ $primaryYellow: #FFE600;
 }
 
 .mainLandingContent {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
+    display: flex;
     .contentContainer{
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        min-width: 1200px;
-        position: relative;
+        overflow-x: hidden;
         .contentLeft { // LEFT CONTENT
             padding-top: 100px;
-            float: right;
+            position: absolute;
+            left: 10%;
+            z-index: 2;
             .fourItems {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -128,13 +129,10 @@ $primaryYellow: #FFE600;
                     }
                 }
             }
-        .contentRight {
+            .contentRight {
+                position: absolute;
+                top: 95px;
+                left: 50%;
         }
         }
-    }      
-
-@media (max-width: 500px) {
-    .contentLeft {
-        float: left;
     }
-}

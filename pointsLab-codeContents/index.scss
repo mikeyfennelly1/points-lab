@@ -1,14 +1,13 @@
 $primaryGrey: #D9D9D9;
 $secondaryGrey: #EEEEEE;
 $primaryTeal: #00FF75;
-$secondaryTeal: #14FF00;
 $secondaryTeal: #00d86c;
 $primaryYellow: #FFE600;
 
 * {
     background-color: $secondaryGrey;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -38,7 +37,7 @@ $primaryYellow: #FFE600;
     font-family: 'Montserrat', sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: $secondaryTeal;
+    background-color: #009B6C;
     text-decoration: dashed underline;
 }
 
@@ -85,7 +84,7 @@ $primaryYellow: #FFE600;
             .landingTitle {
                 max-width: 590px;
                 h1 {
-                    @include textToggle(black, 5rem);
+                    @include textToggle(rgb(24, 24, 24), 5rem);
                     #results {
                         text-decoration: underline $secondaryTeal 3px;
                     }
@@ -108,11 +107,11 @@ $primaryYellow: #FFE600;
                     border-radius: 5px;
                     border: 1px solid black;
                     padding: 10px;
-                    padding-left: 15px;
-                    padding-right: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     margin-right: 20px;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
+                    margin-top: 50px;
+                    margin-bottom: 80px;
 
                 }
                     @media screen and (max-width: 768px) {
@@ -120,6 +119,7 @@ $primaryYellow: #FFE600;
                         max-width: 100%;
                     }
                 a {
+                    padding-left: 30px;
                     font-family: sans-serif;
                     @include textToggle(black, );
                 }
@@ -127,8 +127,8 @@ $primaryYellow: #FFE600;
             .fourItems {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-top: 50px;
+                padding-bottom: 50px;
                 border-bottom: 1px solid rgb(135, 135, 135);
                 border-top: 1px solid rgb(135, 135, 135);
                     h3 {
@@ -136,6 +136,7 @@ $primaryYellow: #FFE600;
                         font-family: sans-serif;
                         font-weight: bold;
                         color: $secondaryTeal;
+                        padding-bottom: 10px;
                     }
                     h4 {
                         font-size: 11px;
@@ -156,4 +157,13 @@ $primaryYellow: #FFE600;
 
         }
         }
+    }
+
+    .cardsContainer {
+        position: absolute;
+        top: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include textToggle(black, 1.25rem);
     }

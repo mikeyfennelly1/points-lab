@@ -1,7 +1,7 @@
 * {
   background-color: #EEEEEE;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-family: "Montserrat", sans-serif;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #00d86c;
+  background-color: #009B6C;
   -webkit-text-decoration: dashed underline;
           text-decoration: dashed underline;
 }
@@ -79,7 +79,7 @@
 }
 .mainLandingContent .contentContainer .contentLeft .landingTitle h1 {
   text-decoration: none;
-  color: black;
+  color: rgb(24, 24, 24);
   font-size: 5rem;
   font-weight: 100;
 }
@@ -107,11 +107,11 @@
   border-radius: 5px;
   border: 1px solid black;
   padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin {
@@ -120,6 +120,7 @@
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
+  padding-left: 30px;
   font-family: sans-serif;
   text-decoration: none;
   color: black;
@@ -129,8 +130,8 @@
 .mainLandingContent .contentContainer .contentLeft .fourItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid rgb(135, 135, 135);
   border-top: 1px solid rgb(135, 135, 135);
 }
@@ -139,6 +140,7 @@
   font-family: sans-serif;
   font-weight: bold;
   color: #00d86c;
+  padding-bottom: 10px;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h4 {
   font-size: 11px;
@@ -156,4 +158,15 @@
   .mainLandingContent .contentContainer .contentRight {
     display: none;
   }
+}
+
+.cardsContainer {
+  position: absolute;
+  top: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 100;
 }/*# sourceMappingURL=index.css.map */

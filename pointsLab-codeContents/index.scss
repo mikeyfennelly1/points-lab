@@ -167,3 +167,11 @@ $primaryYellow: #FFE600;
 
         @include textToggle(black, 1.25rem);
     }
+
+    .content {
+        position: absolute;
+        top: 90vh;
+        left: 100px;
+        z-index: 3;
+        max-width: 500px;
+    }

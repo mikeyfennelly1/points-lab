@@ -160,7 +160,7 @@ $primaryYellow: #FFE600;
     }
 
     .heightAdjuster {
-        background-color: red;
+        // background-color: red;
         border: 3px solid red;
         width: 100vw;
         height: 90vh;
@@ -181,6 +181,9 @@ $primaryYellow: #FFE600;
     
     .tab_box {
         flex-direction: column;
+        .tab_btn {
+            font-size: 2rem;
+        }
     }
     
     .container {
@@ -189,8 +192,8 @@ $primaryYellow: #FFE600;
     
     .line {
         position: absolute;
-        top: 30px;
-        left: 0;
+        top: 100vh;
+        left: 20px;
         width: 5px;
         height: 25px;
         background-color: aqua;

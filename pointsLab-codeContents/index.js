@@ -1,3 +1,17 @@
+// Height adjust feature
+const banner = document.querySelector('.banner');
+const navbar = document.querySelector('.topnav');
+const mainLandingContent = document.querySelector('.contentLeft');
+const heightAdjuster = document.querySelector('.heightAdjuster');
+const mainHeight = banner.offsetHeight + navbar.offsetHeight + mainLandingContent.offsetHeight;
+
+console.log(mainHeight);
+
+heightAdjuster.style.height = mainHeight + "px"; 
+
+
+// tabs feature
+
 const tabs = document.querySelectorAll('.tab_btn');
 const all_content = document.querySelectorAll('.content');
 

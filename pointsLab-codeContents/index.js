@@ -1,12 +1,3 @@
-const navbar = document.querySelector('topnav');
-const banner = document.querySelector('banner');
-const mainContent = document.querySelector('mainLandingContent');
-let landingHeight = navbar.offsetHeight + banner.offsetHeight + mainContent.offsetHeight;
-console.log(landingHeight);
-
-const heightAdjuster = document.querySelector('heightAdjuster');
-heightAdjuster.style.height = landingHeight + "px";
-
 const tabs = document.querySelectorAll('.tab_btn');
 const all_content = document.querySelectorAll('.content');
 

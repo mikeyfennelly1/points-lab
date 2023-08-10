@@ -169,4 +169,12 @@
   color: black;
   font-size: 1.25rem;
   font-weight: 100;
+}
+
+.content {
+  position: absolute;
+  top: 90vh;
+  left: 100px;
+  z-index: 3;
+  max-width: 500px;
 }/*# sourceMappingURL=index.css.map */

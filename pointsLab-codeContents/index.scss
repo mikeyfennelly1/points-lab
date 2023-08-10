@@ -159,6 +159,13 @@ $primaryYellow: #FFE600;
         }
     }
 
+    .heightAdjuster {
+        background-color: red;
+        border: 3px solid red;
+        width: 100vw;
+        height: 90vh;
+    }
+
     .cardsContainer {
         position: absolute;
         top: 100vh;
@@ -168,10 +175,28 @@ $primaryYellow: #FFE600;
         @include textToggle(black, 1.25rem);
     }
 
-    .content {
+    .active {
+        color: aqua;
+    }
+    
+    .tab_box {
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 30px;
+    }
+    
+    .line {
         position: absolute;
-        top: 90vh;
-        left: 100px;
-        z-index: 3;
-        max-width: 500px;
+        top: 30px;
+        left: 0;
+        width: 5px;
+        height: 25px;
+        background-color: aqua;
+        transition: all .15s ease-in-out;
+    }
+    
+    .content {
+        display: none;
     }

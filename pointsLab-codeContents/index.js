@@ -2,13 +2,17 @@
 const banner = document.querySelector('.banner');
 const navbar = document.querySelector('.topnav');
 const mainLandingContent = document.querySelector('.contentLeft');
-const heightAdjuster = document.querySelector('.heightAdjuster');
 const mainHeight = banner.offsetHeight + navbar.offsetHeight + mainLandingContent.offsetHeight;
+const heightAdjuster = document.querySelector('.heightAdjuster');
 
-console.log(mainHeight);
 
 heightAdjuster.style.height = mainHeight + "px"; 
 
+let line = document.querySelector('.line');
+line.style.top = heightAdjuster.offsetHeight + 130 + "px";
+
+console.log('heightAdjuster: ' + heightAdjuster.offsetHeight);
+console.log('line.style.top: ' + line.style.top);
 
 // tabs feature
 
@@ -20,10 +24,10 @@ tabs.forEach((tab, index)=> {
         tabs.forEach(tab=>{tab.classList.remove('active')});
         tab.classList.add('active');
 
-        
         var line = document.querySelector('.line');
         line.style.height = e.target.offsetHeight + "px"
-        line.style.top = e.target.offsetTop + "px"
+        line.style.top = e.target.offsetTop + "px";
+        console.log(line.style.height);
         
         all_content.forEach(content=>{content.classList.remove('active')})
         all_content[index].classList.add('active');

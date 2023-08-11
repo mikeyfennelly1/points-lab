@@ -161,7 +161,6 @@
 }
 
 .heightAdjuster {
-  border: 3px solid red;
   width: 100vw;
   height: 90vh;
 }
@@ -178,7 +177,7 @@
 }
 
 .active {
-  color: aqua;
+  color: #00FF75;
 }
 
 .tab_box {
@@ -189,19 +188,26 @@
 }
 
 .container {
-  padding: 30px;
+  padding-left: 50px;
+  padding-top: 30px;
+  max-width: 600px;
 }
 
 .line {
   position: absolute;
-  top: 100vh;
+  top: 0;
   left: 20px;
-  width: 5px;
-  height: 25px;
-  background-color: aqua;
+  width: 3px;
+  height: 37px;
+  border-radius: 5px;
+  background-color: #00FF75;
   transition: all 0.15s ease-in-out;
 }
 
-.content {
+.content .active {
+  display: block;
+}
+
+.content .inactive {
   display: none;
 }/*# sourceMappingURL=index.css.map */

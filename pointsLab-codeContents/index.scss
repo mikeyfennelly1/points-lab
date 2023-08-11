@@ -161,9 +161,8 @@ $primaryYellow: #FFE600;
 
     .heightAdjuster {
         // background-color: red;
-        border: 3px solid red;
         width: 100vw;
-        height: 90vh;
+        height: 90vh; // this is adjusted in index.js regardless
     }
 
     .cardsContainer {
@@ -176,7 +175,7 @@ $primaryYellow: #FFE600;
     }
 
     .active {
-        color: aqua;
+        color: $primaryTeal;
     }
     
     .tab_box {
@@ -187,19 +186,26 @@ $primaryYellow: #FFE600;
     }
     
     .container {
-        padding: 30px;
+        padding-left: 50px;
+        padding-top: 30px;
+        max-width: 600px;
     }
     
     .line {
         position: absolute;
-        top: 100vh;
+        top: 0;
         left: 20px;
-        width: 5px;
-        height: 25px;
-        background-color: aqua;
+        width: 3px;
+        height: 37px;
+        border-radius: 5px;
+        background-color: $primaryTeal;
         transition: all .15s ease-in-out;
     }
-    
-    .content {
+        
+    .content .active{
+        display: block;
+    }
+
+    .content .inactive {
         display: none;
     }

@@ -12,7 +12,6 @@ let line = document.querySelector('.line');
 line.style.top = heightAdjuster.offsetHeight + 130 + "px";
 
 console.log('heightAdjuster: ' + heightAdjuster.offsetHeight);
-console.log('line.style.top: ' + line.style.top);
 
 // tabs feature
 
@@ -28,20 +27,15 @@ tabs.forEach((tab, index)=> {
         tab.classList.add('active');
 
         var line = document.querySelector('.line');
-        line.style.height = e.target.offsetHeight + "px"
-        line.style.top = e.target.offsetTop + "px";
-        console.log(line.style.height);
+        console.log("line.style.top:" + line.style.top-1015);
+        console.log("line.style.height:" + line.style.height);
         
         all_content.forEach(content=>{content.classList.remove('contentActive')})
         all_content.forEach(content=>{content.classList.add('contentInactive')})
         all_content[index].classList.add('contentActive');
         all_content[index].classList.remove('contentInactive');
+
+        line.style.height = e.target.offsetHeight + "px"
+        line.style.top = e.target.offsetTop + "px";
 })
-})
-
-
-const element = document.querySelector(".active");
-const cssObj = window.getComputedStyle(element, null);
-
-let display = cssObj.getPropertyValue("display");
-console.log(display)
+});

@@ -27,8 +27,6 @@ tabs.forEach((tab, index)=> {
         tab.classList.add('active');
 
         var line = document.querySelector('.line');
-        console.log("line.style.top:" + line.style.top-1015);
-        console.log("line.style.height:" + line.style.height);
         
         all_content.forEach(content=>{content.classList.remove('contentActive')})
         all_content.forEach(content=>{content.classList.add('contentInactive')})
@@ -37,5 +35,6 @@ tabs.forEach((tab, index)=> {
 
         line.style.height = e.target.offsetHeight + "px"
         line.style.top = e.target.offsetTop + "px";
+        console.log(e.target.offsetTop);
 })
 });

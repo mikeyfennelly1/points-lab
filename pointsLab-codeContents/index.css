@@ -106,9 +106,9 @@
   background-color: #FFE600;
   border-radius: 5px;
   border: 1px solid black;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-right: 20px;
   margin-top: 50px;
   margin-bottom: 80px;
@@ -181,17 +181,34 @@
 }
 .tab_box .tab_btn {
   font-size: 2rem;
+  font-weight: bold;
 }
 
-.container {
-  padding-left: 50px;
-  max-width: 600px;
+.pointsLabTitle {
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1420px) {
+  .preContainer {
+    left: calc(0.5 * (100% - 1420px));
+  }
+}
+.preContainer .container {
+  display: flex;
+  padding-left: 20px;
+}
+.preContainer .container h1 {
+  font-size: 2.5rem;
+}
+.preContainer .container .tab_box {
+  width: 600px;
 }
 
 .line {
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: 37px;
+  left: 2px;
   width: 3px;
   height: 37px;
   border-radius: 5px;
@@ -203,10 +220,24 @@
   color: #00FF75;
 }
 
+.content {
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+
 .contentActive {
   display: block;
 }
 
 .contentInactive {
   display: none;
+}
+
+.tutorialScreen {
+  background-color: purple;
+  height: 700px;
+  min-width: 700px;
+  border-radius: 40px;
+  filter: drop-shadow(10px 10px 50px #151515);
+  margin-left: 50px;
 }/*# sourceMappingURL=index.css.map */

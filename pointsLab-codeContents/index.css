@@ -176,10 +176,6 @@
   font-weight: 100;
 }
 
-.active {
-  color: #00FF75;
-}
-
 .tab_box {
   flex-direction: column;
 }
@@ -204,10 +200,14 @@
   transition: all 0.15s ease-in-out;
 }
 
-.content .active {
+.active {
+  color: #00FF75;
+}
+
+.contentActive {
   display: block;
 }
 
-.content .inactive {
+.contentInactive {
   display: none;
 }/*# sourceMappingURL=index.css.map */

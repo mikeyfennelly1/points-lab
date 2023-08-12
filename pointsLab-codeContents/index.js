@@ -22,6 +22,9 @@ const all_content = document.querySelectorAll('.content');
 tabs.forEach((tab, index)=> {
     tab.addEventListener('click', (e)=>{
         tabs.forEach(tab=>{tab.classList.remove('active')});
+        tabs.forEach(tab=>{tab.classList.add('inactive')});
+        
+        tab.classList.remove('inactive');
         tab.classList.add('active');
 
         var line = document.querySelector('.line');
@@ -29,7 +32,16 @@ tabs.forEach((tab, index)=> {
         line.style.top = e.target.offsetTop + "px";
         console.log(line.style.height);
         
-        all_content.forEach(content=>{content.classList.remove('active')})
-        all_content[index].classList.add('active');
+        all_content.forEach(content=>{content.classList.remove('contentActive')})
+        all_content.forEach(content=>{content.classList.add('contentInactive')})
+        all_content[index].classList.add('contentActive');
+        all_content[index].classList.remove('contentInactive');
 })
 })
+
+
+const element = document.querySelector(".active");
+const cssObj = window.getComputedStyle(element, null);
+
+let display = cssObj.getPropertyValue("display");
+console.log(display)

@@ -174,9 +174,6 @@ $primaryYellow: #FFE600;
         @include textToggle(black, 1.25rem);
     }
 
-    .active {
-        color: $primaryTeal;
-    }
     
     .tab_box {
         flex-direction: column;
@@ -201,11 +198,15 @@ $primaryYellow: #FFE600;
         background-color: $primaryTeal;
         transition: all .15s ease-in-out;
     }
-        
-    .content .active{
+    
+    .active {
+        color: $primaryTeal;
+    }
+    
+    .contentActive{
         display: block;
     }
 
-    .content .inactive {
-        display: none;
+    .contentInactive {
+        display: none; 
     }

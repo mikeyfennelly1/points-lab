@@ -9,9 +9,9 @@ const heightAdjuster = document.querySelector('.heightAdjuster');
 heightAdjuster.style.height = mainHeight + "px"; 
 
 let line = document.querySelector('.line');
-line.style.top = heightAdjuster.offsetHeight + 130 + "px";
+line.style.top = heightAdjuster.offsetHeight + 915 + "px";
+console.log(line.style.top);
 
-console.log('heightAdjuster: ' + heightAdjuster.offsetHeight);
 
 // tabs feature
 
@@ -33,7 +33,7 @@ tabs.forEach((tab, index)=> {
         all_content[index].classList.add('contentActive');
         all_content[index].classList.remove('contentInactive');
 
-        line.style.height = e.target.offsetHeight + "px"
+        // line.style.height = e.target.offsetHeight + "px"
         line.style.top = e.target.offsetTop + "px";
         console.log(e.target.offsetTop);
 })

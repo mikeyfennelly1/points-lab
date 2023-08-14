@@ -2,6 +2,7 @@
   background-color: #EEEEEE;
   margin: 0;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -94,11 +95,11 @@
 .mainLandingContent .contentContainer .contentLeft .landingTitle h5 {
   padding-top: 30px;
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.816);
   font-size: 1.25rem;
   font-weight: 100;
   font-family: sans-serif;
-  line-height: 30px;
+  line-height: 40px;
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin button {
   max-width: -moz-fit-content;
@@ -165,6 +166,51 @@
   height: 90vh;
 }
 
+.cardsDesign {
+  padding-bottom: 200px;
+}
+.cardsDesign .titlesDiv {
+  position: relative;
+  padding-top: 200px;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1420px) {
+  .cardsDesign .titlesDiv {
+    left: calc(0.5 * (100% - 1420px));
+  }
+}
+@media screen and (max-width: 2488px) {
+  .cardsDesign .titlesDiv {
+    padding-left: 90px;
+  }
+}
+.cardsDesign .titlesDiv .cardTitle1 {
+  padding-right: 50px;
+}
+.cardsDesign .titlesDiv .cardTitle2 {
+  padding-right: 50px;
+}
+.cardsDesign .cardCollection {
+  height: 200px;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+.cardsDesign .cardCollection .cardContent {
+  max-width: 400px;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  border: 2px solid #D9D9D9;
+  border-radius: 30px;
+}
+.cardsDesign .cardCollection .cardContent h3 {
+  line-height: 40px;
+}
+
 .cardsContainer {
   position: absolute;
   top: 100vh;
@@ -180,23 +226,32 @@
   flex-direction: column;
 }
 .tab_box .tab_btn {
+  padding-bottom: 15px;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .pointsLabTitle {
+  display: inline-block;
+  justify-content: center;
   margin-bottom: 50px;
   margin-left: 20px;
 }
 
-@media screen and (min-width: 1420px) {
-  .preContainer {
-    left: calc(0.5 * (100% - 1420px));
-  }
+.preContainer {
+  display: grid;
+  justify-content: left;
 }
 .preContainer .container {
   display: flex;
+  justify-content: space-around;
   padding-left: 20px;
+  min-width: 600px;
+}
+@media screen and (max-width: 667) {
+  .preContainer .container {
+    max-width: 0;
+  }
 }
 .preContainer .container h1 {
   font-size: 2.5rem;
@@ -221,6 +276,7 @@
 }
 
 .content {
+  padding-bottom: 30px;
   line-height: 30px;
   font-size: 1.2rem;
 }
@@ -240,4 +296,9 @@
   border-radius: 40px;
   filter: drop-shadow(10px 10px 50px #151515);
   margin-left: 50px;
+}
+@media screen and (max-width: 1307px) {
+  .tutorialScreen {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

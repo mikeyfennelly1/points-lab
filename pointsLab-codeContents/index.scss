@@ -8,6 +8,7 @@ $primaryYellow: #FFE600;
     background-color: $secondaryGrey;
     margin: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 @font-face {
@@ -94,9 +95,9 @@ $primaryYellow: #FFE600;
                 }
                 h5 {
                     padding-top: 30px;
-                    @include textToggle(black, 1.25rem);
+                    @include textToggle(rgba(0, 0, 0, 0.816), 1.25rem);
                     font-family: sans-serif;
-                    line-height: 30px;
+                    line-height: 40px;
                 }
             }
             
@@ -159,11 +160,61 @@ $primaryYellow: #FFE600;
         }
     }
 
+top: 1110px;
+
+// HEIGHT ADJUSTER 
+
     .heightAdjuster {
         // background-color: red;
         width: 100vw;
         height: 90vh; // this is adjusted in index.js regardless
     }
+
+// CARDS DESIGN
+.cardsDesign{
+    padding-bottom: 200px;
+    .titlesDiv {
+        position: relative;
+        padding-top: 200px;
+        // border: 3px solid red;
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+        @media screen and (min-width: 1420px) {
+            left: calc(0.5*(100% - 1420px));
+        }
+        @media screen and (max-width: 2488px) {
+            padding-left: 90px;
+        }
+        .cardTitle1 {
+            padding-right: 50px;
+        }
+        .cardTitle2 {
+            padding-right: 50px;
+        }
+    }
+    .cardCollection {
+        // border: 3px solid navy;
+        height: 200px;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        .cardContent {
+            max-width: 400px;
+            overflow: hidden;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 20px;
+            border: 2px solid #D9D9D9;
+            border-radius: 30px;
+            h3 {
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+
 
     .cardsContainer {
         position: absolute;
@@ -178,24 +229,30 @@ $primaryYellow: #FFE600;
     .tab_box {
         flex-direction: column;
         .tab_btn {
+            padding-bottom: 15px;
             font-size: 2rem;
             font-weight: bold;
         }
     }
     
     .pointsLabTitle {
+        display: inline-block;
+        justify-content: center;
         margin-bottom: 50px;
         margin-left: 20px;
     }
 
     .preContainer {
-        @media screen and (min-width: 1420px) {
-            left: calc(0.5*(100% - 1420px));
-        }
+        display: grid;
+        justify-content: left;
         .container {
+            @media screen and (max-width: 667) {
+                max-width: 0;
+            }
             display: flex;
+            justify-content: space-around;
             padding-left: 20px;
-            // border: 3px solid red;
+            min-width: 600px;
             h1 {
                 font-size: 2.5rem;
             }
@@ -221,6 +278,7 @@ $primaryYellow: #FFE600;
     }
 
     .content {
+        padding-bottom: 30px;
         line-height: 30px;
         font-size: 1.2rem;
     }
@@ -240,4 +298,9 @@ $primaryYellow: #FFE600;
         border-radius: 40px;
         filter: drop-shadow(10px 10px 50px #151515);
         margin-left: 50px;
+        @media screen and (max-width: 1307px){
+            display: none;
+        }
     }
+
+

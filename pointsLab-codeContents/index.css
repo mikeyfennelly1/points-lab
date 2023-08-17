@@ -240,13 +240,28 @@
 
 .preContainer {
   display: grid;
-  justify-content: left;
+  justify-content: center;
 }
 .preContainer .container {
+  max-width: 1500px;
+  justify-content: left;
   display: flex;
   justify-content: space-around;
   padding-left: 20px;
   min-width: 600px;
+}
+@media screen and (min-width: 1420px) {
+  .preContainer .container {
+    left: calc(0.5 * (100% - 1420px));
+  }
+}
+.preContainer .container .pointsLabTitle {
+  position: relative;
+}
+@media screen and (min-width: 1420px) {
+  .preContainer .container .pointsLabTitle {
+    left: calc(0.5 * (100% - 1420px));
+  }
 }
 @media screen and (max-width: 667) {
   .preContainer .container {

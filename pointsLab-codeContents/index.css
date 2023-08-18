@@ -239,40 +239,56 @@
 }
 
 .preContainer {
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 .preContainer .container {
   max-width: 1500px;
-  justify-content: left;
+  justify-content: center;
   display: flex;
-  justify-content: space-around;
-  padding-left: 20px;
-  min-width: 600px;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 1420px) {
-  .preContainer .container {
-    left: calc(0.5 * (100% - 1420px));
-  }
-}
-.preContainer .container .pointsLabTitle {
+.preContainer .container .BBSFS {
   position: relative;
-}
-@media screen and (min-width: 1420px) {
-  .preContainer .container .pointsLabTitle {
-    left: calc(0.5 * (100% - 1420px));
-  }
-}
-@media screen and (max-width: 667) {
-  .preContainer .container {
-    max-width: 0;
-  }
+  left: calc(0.5 * (100% - 1400px));
 }
 .preContainer .container h1 {
   font-size: 2.5rem;
 }
 .preContainer .container .tab_box {
-  width: 600px;
+  flex: 40%;
+  max-width: 600px;
+}
+
+@media (max-width: 1200px) {
+  .BBSFS {
+    left: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .tab_box {
+    padding-right: calc(100% - 600px);
+    order: 2;
+  }
+  .tutorialScreen {
+    flex: 100%;
+    order: 1;
+    width: 100vw;
+    height: 50vw;
+  }
+}
+.tutorialScreen {
+  background-color: purple;
+  height: 700px;
+  min-width: 700px;
+  border-radius: 40px;
+  filter: drop-shadow(10px 10px 50px #151515);
+  margin-left: 50px;
+}
+@media screen and (max-width: 1307px) {
+  .tutorialScreen {
+    display: none;
+  }
 }
 
 .line {
@@ -302,18 +318,4 @@
 
 .contentInactive {
   display: none;
-}
-
-.tutorialScreen {
-  background-color: purple;
-  height: 700px;
-  min-width: 700px;
-  border-radius: 40px;
-  filter: drop-shadow(10px 10px 50px #151515);
-  margin-left: 50px;
-}
-@media screen and (max-width: 1307px) {
-  .tutorialScreen {
-    display: none;
-  }
 }/*# sourceMappingURL=index.css.map */

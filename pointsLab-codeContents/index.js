@@ -6,7 +6,7 @@ const mainHeight = banner.offsetHeight + navbar.offsetHeight + mainLandingConten
 const heightAdjuster = document.querySelector('.heightAdjuster');
 
 
-heightAdjuster.style.height = mainHeight + "px"; 
+// heightAdjuster.style.height = mainHeight + "px"; 
 
 let line = document.querySelector('.line');
 line.style.top = heightAdjuster.offsetHeight + 915 + "px";

@@ -3,7 +3,7 @@ const banner = document.querySelector('.banner');
 const navbar = document.querySelector('.topnav');
 const mainLandingContent = document.querySelector('.contentLeft');
 const mainHeight = banner.offsetHeight + navbar.offsetHeight + mainLandingContent.offsetHeight;
-const heightAdjuster = document.querySelector('.heightAdjuster');
+const heightAdjuster = document.querySelector('.heightAdjuster2');
 
 
 // heightAdjuster.style.height = mainHeight + "px"; 

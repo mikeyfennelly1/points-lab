@@ -8,11 +8,47 @@ $primaryYellow: #FFE600;
 .Layer_1 {
     position: absolute;
     z-index: -1;
-    top: 60%;
-    min-width: 110vw;
+    top: 1vh;
+    width: 100vw;
 }
-
-
+@media screen and (max-width: 2220px) {
+    .Layer_1 {
+        top: 10vh;
+    }
+}
+@media screen and (max-width: 1980px) {
+    .Layer_1 {
+        top: 18vh;
+    }
+}
+@media screen and (max-width: 1780px) {
+    .Layer_1 {
+        top: 25vh;
+    }
+}
+@media screen and (max-width: 1580px) {
+    .Layer_1 {
+        top: 30vh;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .Layer_1 {
+        top: 35vh;
+    }
+}
+@media screen and (max-width: 1270px) {
+    .Layer_1 {
+        top: 37vh;
+    }
+}
+@media screen and (max-width: 897px) {
+    .Layer_1 {
+        top: 37vh;
+    }
+}
+.Layer_2 {
+    min-width: 100px;
+}
 @font-face {
     src: url(Montserrat-VariableFont_wght.ttf);
     font-family: "Montserrat-Variable";
@@ -20,6 +56,10 @@ $primaryYellow: #FFE600;
 @font-face {
     src: url(Merriweather-Regular.ttf);
     font-family: "Merriweather";
+}
+@font-face {
+    src: url(Merriweather-Italic.ttf);
+    font-family: "Merriweather-Italic";
 }
 @font-face {
     src: url(Merriweather-Light.ttf);
@@ -43,7 +83,7 @@ $primaryYellow: #FFE600;
     color: white;
 }
 body {
-    background-color: #fffdea;
+    background-color: white;
 }
 
 @mixin textToggle($color: #000, $font-size: 1rem, $font-weight: 100) {
@@ -95,7 +135,7 @@ body {
     a{
         @include textToggle(black, 0.8rem, 500);
         padding-right: 20px;
-        margin: auto;
+        margin-bottom: 5px;
     }
     #logo {
         font-weight: bolder;
@@ -128,7 +168,6 @@ button:hover {
 }
 
 .mainLandingContent {
-    display: flex;
     .contentContainer{
         overflow-x: hidden;
         .contentLeft { // LEFT CONTENT
@@ -271,7 +310,20 @@ button:hover {
     left: calc(0.5*(100% - 1500px));
     padding-bottom: 75px;
     padding-left: 30px;
-    font-family: 'Merriweather';
+    h1 {
+        font-family: 'Merriweather';
+    }
+    h2 {
+        font-family: 'Merriweather-Light';
+    }
+    #by {
+        font-family: 'Merriweather-Italic';
+        color: $secondaryTeal;
+    }
+    #for {
+        font-family: 'Merriweather-Italic';
+        color: $secondaryTeal;
+    }
 }
 
 .tab_box {
@@ -423,6 +475,50 @@ button:hover {
             h3 {
                 line-height: 40px;
             }
+        }
+    }
+}
+.thirdPageContainer{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    .thirdPage {
+        display: flex;
+        flex-wrap: wrap;
+        border: 3px solid red;
+        .lhs {
+            display: grid;
+            flex: 40%;
+            h1 {
+                font-family: 'Merriweather';
+                padding-bottom: 50px;
+            }
+            h5 {
+                font-family: 'Montserrat-Variable';
+            }
+            .viewPlans {
+                max-width: fit-content;
+                max-height: 30px;
+                background-color: $primaryYellow;
+                border-radius: 5px;
+                padding: 10px;
+                border: 1px solid black;
+                color: black;
+            }
+            #fast {
+                font-family: 'Merriweather-Italic';
+                color: $secondaryTeal;
+            }
+            #pqbt {
+                font-family: 'Merriweather-Italic';
+                color: $secondaryTeal;
+            }
+        }
+        .rhs {
+            flex: 60%;
+            max-width: 500px;
+            height: 500px;
+            background-color: #FFE600;
         }
     }
 }

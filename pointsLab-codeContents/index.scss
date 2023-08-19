@@ -43,9 +43,10 @@ $primaryYellow: #FFE600;
 }
 @media screen and (max-width: 897px) {
     .Layer_1 {
-        top: 37vh;
+        display: none;
     }
 }
+
 .Layer_2 {
     min-width: 100px;
 }

@@ -4,19 +4,40 @@ $primaryTeal: #00FF75;
 $secondaryTeal: #00d86c;
 $primaryYellow: #FFE600;
 
-* {
-    background-color: $secondaryGrey;
-    margin: 0;
-    overflow-x: hidden;
-    font-family: sans-serif;
+.Layer_1 {
+    position: absolute;
+    z-index: 0;
+    top: 40%;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/staticMontserrat/Montserrat-Medium.ttf') format('ttf');
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-family: "Montserrat-Variable";
 }
-// Seems to not be workikng but will come back to this at another time
+@font-face {
+    src: url(Merriweather-Regular.ttf);
+    font-family: "Merriweather";
+}
+@font-face {
+    src: url(Merriweather-Light.ttf);
+    font-family: "Merriweather-Light";
+}
+@font-face {
+    src: url(Merriweather-Bold.ttf);
+    font-family: "Merriweather-Bold";
+}
+@font-face {
+    src: url(SourceCodePro-VariableFont_wght.ttf);
+    font-family: "Source-Code-Pro-Variable";
+}
 
+* {
+    background-color: transparent;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat-Variable';
+    font-weight: 500;
+}
 
 @mixin textToggle($color: #000, $font-size: 1rem, $font-weight: 100) {
     text-decoration: none;
@@ -34,8 +55,9 @@ $primaryYellow: #FFE600;
 }
 .banner {
     @include centering();
-    @include textToggle($primaryGrey, 0.8rem, 700);
-    font-family: 'Montserrat', sans-serif;
+    @include textToggle($primaryGrey, 0.8rem, 400);
+    font-family: 'Source-Code-Pro-Variable', sans-serif;
+    line-height: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #009B6C;
@@ -43,6 +65,8 @@ $primaryYellow: #FFE600;
 }
 
 .topnav {
+    position: relative;
+    z-index: 2;
     border: 1px solid black;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -52,12 +76,13 @@ $primaryYellow: #FFE600;
     padding-right: 35px;
     align-items: center;
         a{
-            @include textToggle(black, 0.8rem);
+            @include textToggle(black, 0.8rem, 500);
             padding-right: 20px;
         }
         #logo {
             font-weight: bolder;
             font-size: 1.6rem;
+            font-family: 'Merriweather-Light';
         }
         button {
             max-width: fit-content;
@@ -74,6 +99,7 @@ $primaryYellow: #FFE600;
     .contentContainer{
         overflow-x: hidden;
         .contentLeft { // LEFT CONTENT
+            background-color: transparent;
             padding-top: 150px;
             padding-left: 20px;
             position: absolute;
@@ -83,20 +109,29 @@ $primaryYellow: #FFE600;
                 left: calc(0.5*(100% - 1420px));
             }
             .landingTitle {
+                background-color: transparent;
                 max-width: 590px;
                 h1 {
+                    background-color: transparent;
+                    font-family: 'Merriweather-Light';
                     @include textToggle(rgb(24, 24, 24), 5rem);
-                    #results {
+                }
+                #results {
+                        background-color: transparent;
+                        font-family: 'Merriweather';
                         text-decoration: underline $secondaryTeal 3px;
                     }
                     #stress{
+                        background-color: transparent;
+                        font-family: 'Merriweather';
                         text-decoration: line-through $secondaryTeal 3px;
                     }
-                }
-                h5 {
+                    h5 {
+                    background-color: transparent;
                     padding-top: 30px;
                     @include textToggle(rgba(0, 0, 0, 0.816), 1.25rem);
-                    font-family: sans-serif;
+                    font-family: 'Montserrat-Variable';
+                    font-weight: 450;
                     line-height: 40px;
                 }
             }
@@ -106,7 +141,7 @@ $primaryYellow: #FFE600;
                     max-width: fit-content;
                     background-color: $primaryYellow;
                     border-radius: 5px;
-                    border: 1px solid black;
+                    border: 2px solid rgb(12, 12, 12);
                     padding: 15px;
                     padding-left: 30px;
                     padding-right: 30px;
@@ -126,6 +161,7 @@ $primaryYellow: #FFE600;
                 }
             }
             .fourItems {
+                background-color: transparent;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 padding-top: 50px;
@@ -133,19 +169,23 @@ $primaryYellow: #FFE600;
                 border-bottom: 1px solid rgb(135, 135, 135);
                 border-top: 1px solid rgb(135, 135, 135);
                     h3 {
+                        background-color: transparent;
                         font-size: 20px;
-                        font-family: sans-serif;
-                        font-weight: bold;
+                        font-family: 'Source-Code-Pro-Variable';
+                        font-weight: 625;
                         color: $secondaryTeal;
                         padding-bottom: 10px;
                     }
                     h4 {
+                        background-color: transparent;
                         font-size: 11px;
-                        font-family: sans-serif;
+                        font-family: 'Montserrat-Variable';
                     }
                 }
             }
             .contentRight {
+                max-width: 1000px;
+                max-height: 1000px;
                 position: absolute;
                 top: 95px;
                 left: 50%;
@@ -165,12 +205,135 @@ $primaryYellow: #FFE600;
     .heightAdjuster {
         // background-color: red;
         width: 100vw;
-        height: 90vh; // this is adjusted in index.js regardless
+        height: 100vh; // this is adjusted in index.js regardless
     }
 
 // CARDS DESIGN
+
+
+
+.cardsContainer {
+    position: absolute;
+    top: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    @include textToggle(black, 1.25rem);
+}
+
+.bbsfs {
+    position: relative;
+    left: calc(0.5*(100% - 1500px));
+    padding-bottom: 75px;
+    padding-left: 30px;
+}
+
+.tab_box {
+    flex-direction: column;
+    .tab_btn {
+        padding-bottom: 15px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.pointsLabTitle {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+
+.preContainer {
+    display: flex;
+    justify-content: center;
+    .container {
+        max-width: 1500px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 2.5rem;
+        }
+        .tab_box {
+            flex: 40%;
+            padding-left: 30px;
+        }
+    }
+    
+
+    
+    @media (max-width: 1520px) {
+        .bbsfs {
+        left: 0;
+    }
+}
+@media (min-width: 1000px) {
+    .tab_box {
+        max-width: none;
+    }
+}
+@media (max-width: 1307px) {
+    .tab_box {
+        padding-right: calc(100% - 600px);
+        order: 2;
+        max-width: none;
+    }
+    .tutorialScreen {
+        flex: 100%;
+        order: 1;
+        width: 100vw;
+        height: 50vw;
+    }
+}
+
+@media (min-width: 1307px) {
+    .tutorialScreen{
+        flex: 50%;
+    }
+}
+
+.tutorialScreen {
+    height: 700px;
+    background-color: grey;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+
+.line {
+    position: absolute;
+    top: 37px;
+    left: 2px;
+    width: 3px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: $primaryTeal;
+    transition: all .15s ease-in-out;
+}    
+
+.active {
+    color: $primaryTeal;
+}    
+ .content {
+    padding-bottom: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+}    
+
+.contentActive{
+     display: block;
+}    
+.contentInactive {
+    display: none; 
+}        
+
+
+
 .cardsDesign{
-    padding-bottom: 200px;
+    padding-top: 100px;
     .titlesDiv {
         position: relative;
         padding-top: 200px;
@@ -211,125 +374,3 @@ $primaryYellow: #FFE600;
         }
     }
 }
-
-
-
-.cardsContainer {
-    position: absolute;
-    top: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    @include textToggle(black, 1.25rem);
-}
-
-
-.tab_box {
-    flex-direction: column;
-    .tab_btn {
-        padding-bottom: 15px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-}
-
-.pointsLabTitle {
-    display: inline-block;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-left: 20px;
-}
-
-.preContainer {
-    display: flex;
-    justify-content: center;
-    .container {
-        max-width: 1500px;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        .BBSFS {
-            position: relative;
-            left: calc(0.5*(100% - 1400px));
-        }
-        h1 {
-            font-size: 2.5rem;
-        }
-        .tab_box {
-            flex: 40%;
-            max-width: 600px;
-        }
-    }
-}
-
-
-@media (max-width: 1200px) {
-    .BBSFS {
-        left: 0;
-    }
-}
-@media (max-width: 1000px) {
-    .tab_box {
-        padding-right: calc(100% - 600px);
-        order: 2;
-    }
-    .tutorialScreen {
-      flex: 100%;
-      order: 1;
-      width: 100vw;
-      height: 50vw;
-    }
-  }
-
-  
-      .tutorialScreen {
-          background-color: purple;
-          height: 700px;
-          min-width: 700px;
-          border-radius: 40px;
-          filter: drop-shadow(10px 10px 50px #151515);
-          margin-left: 50px;
-          @media screen and (max-width: 1307px){
-              display: none;
-          }
-      }
-
-
-
-
-
-
-
-
-
-
-
-.line {
-    position: absolute;
-        top: 37px;
-        left: 2px;
-        width: 3px;
-        height: 37px;
-        border-radius: 5px;
-        background-color: $primaryTeal;
-        transition: all .15s ease-in-out;
-    }    
-    
-    .active {
-        color: $primaryTeal;
-    }    
-
-    .content {
-        padding-bottom: 30px;
-        line-height: 30px;
-        font-size: 1.2rem;
-    }    
-    
-    .contentActive{
-        display: block;
-    }    
-
-    .contentInactive {
-        display: none; 
-    }        
-

@@ -1,14 +1,37 @@
-* {
-  background-color: #EEEEEE;
-  margin: 0;
-  overflow-x: hidden;
-  font-family: sans-serif;
+.Layer_1 {
+  position: absolute;
+  z-index: 0;
+  top: 40%;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("fonts/staticMontserrat/Montserrat-Medium.ttf") format("ttf");
+  src: url(Montserrat-VariableFont_wght.ttf);
+  font-family: "Montserrat-Variable";
 }
+@font-face {
+  src: url(Merriweather-Regular.ttf);
+  font-family: "Merriweather";
+}
+@font-face {
+  src: url(Merriweather-Light.ttf);
+  font-family: "Merriweather-Light";
+}
+@font-face {
+  src: url(Merriweather-Bold.ttf);
+  font-family: "Merriweather-Bold";
+}
+@font-face {
+  src: url(SourceCodePro-VariableFont_wght.ttf);
+  font-family: "Source-Code-Pro-Variable";
+}
+* {
+  background-color: transparent;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat-Variable";
+  font-weight: 500;
+}
+
 .banner {
   display: grid;
   align-items: center;
@@ -18,8 +41,9 @@
   text-decoration: none;
   color: #D9D9D9;
   font-size: 0.8rem;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-family: "Source-Code-Pro-Variable", sans-serif;
+  line-height: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #009B6C;
@@ -28,6 +52,8 @@
 }
 
 .topnav {
+  position: relative;
+  z-index: 2;
   border: 1px solid black;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -41,12 +67,13 @@
   text-decoration: none;
   color: black;
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 500;
   padding-right: 20px;
 }
 .topnav #logo {
   font-weight: bolder;
   font-size: 1.6rem;
+  font-family: "Merriweather-Light";
 }
 .topnav button {
   max-width: -moz-fit-content;
@@ -64,6 +91,7 @@
   overflow-x: hidden;
 }
 .mainLandingContent .contentContainer .contentLeft {
+  background-color: transparent;
   padding-top: 150px;
   padding-left: 20px;
   position: absolute;
@@ -76,29 +104,38 @@
   }
 }
 .mainLandingContent .contentContainer .contentLeft .landingTitle {
+  background-color: transparent;
   max-width: 590px;
 }
 .mainLandingContent .contentContainer .contentLeft .landingTitle h1 {
+  background-color: transparent;
+  font-family: "Merriweather-Light";
   text-decoration: none;
   color: rgb(24, 24, 24);
   font-size: 5rem;
   font-weight: 100;
 }
-.mainLandingContent .contentContainer .contentLeft .landingTitle h1 #results {
+.mainLandingContent .contentContainer .contentLeft .landingTitle #results {
+  background-color: transparent;
+  font-family: "Merriweather";
   -webkit-text-decoration: underline #00d86c 3px;
           text-decoration: underline #00d86c 3px;
 }
-.mainLandingContent .contentContainer .contentLeft .landingTitle h1 #stress {
+.mainLandingContent .contentContainer .contentLeft .landingTitle #stress {
+  background-color: transparent;
+  font-family: "Merriweather";
   -webkit-text-decoration: line-through #00d86c 3px;
           text-decoration: line-through #00d86c 3px;
 }
 .mainLandingContent .contentContainer .contentLeft .landingTitle h5 {
+  background-color: transparent;
   padding-top: 30px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.816);
   font-size: 1.25rem;
   font-weight: 100;
-  font-family: sans-serif;
+  font-family: "Montserrat-Variable";
+  font-weight: 450;
   line-height: 40px;
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin button {
@@ -106,7 +143,7 @@
   max-width: fit-content;
   background-color: #FFE600;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 2px solid rgb(12, 12, 12);
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
@@ -129,6 +166,7 @@
   font-weight: 100;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems {
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 50px;
@@ -137,17 +175,21 @@
   border-top: 1px solid rgb(135, 135, 135);
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h3 {
+  background-color: transparent;
   font-size: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "Source-Code-Pro-Variable";
+  font-weight: 625;
   color: #00d86c;
   padding-bottom: 10px;
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h4 {
+  background-color: transparent;
   font-size: 11px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Variable";
 }
 .mainLandingContent .contentContainer .contentRight {
+  max-width: 1000px;
+  max-height: 1000px;
   position: absolute;
   top: 95px;
   left: 50%;
@@ -163,11 +205,127 @@
 
 .heightAdjuster {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
+}
+
+.cardsContainer {
+  position: absolute;
+  top: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.bbsfs {
+  position: relative;
+  left: calc(0.5 * (100% - 1500px));
+  padding-bottom: 75px;
+  padding-left: 30px;
+}
+
+.tab_box {
+  flex-direction: column;
+}
+.tab_box .tab_btn {
+  padding-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pointsLabTitle {
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.preContainer {
+  display: flex;
+  justify-content: center;
+}
+.preContainer .container {
+  max-width: 1500px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.preContainer h1 {
+  font-size: 2.5rem;
+}
+.preContainer .tab_box {
+  flex: 40%;
+  padding-left: 30px;
+}
+
+@media (max-width: 1520px) {
+  .bbsfs {
+    left: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .tab_box {
+    max-width: none;
+  }
+}
+@media (max-width: 1307px) {
+  .tab_box {
+    padding-right: calc(100% - 600px);
+    order: 2;
+    max-width: none;
+  }
+  .tutorialScreen {
+    flex: 100%;
+    order: 1;
+    width: 100vw;
+    height: 50vw;
+  }
+}
+@media (min-width: 1307px) {
+  .tutorialScreen {
+    flex: 50%;
+  }
+}
+.tutorialScreen {
+  height: 700px;
+  background-color: grey;
+  border-radius: 40px;
+  margin: 20px;
+}
+
+.line {
+  position: absolute;
+  top: 37px;
+  left: 2px;
+  width: 3px;
+  height: 37px;
+  border-radius: 5px;
+  background-color: #00FF75;
+  transition: all 0.15s ease-in-out;
+}
+
+.active {
+  color: #00FF75;
+}
+
+.content {
+  padding-bottom: 30px;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+
+.contentActive {
+  display: block;
+}
+
+.contentInactive {
+  display: none;
 }
 
 .cardsDesign {
-  padding-bottom: 200px;
+  padding-top: 100px;
 }
 .cardsDesign .titlesDiv {
   position: relative;
@@ -209,113 +367,4 @@
 }
 .cardsDesign .cardCollection .cardContent h3 {
   line-height: 40px;
-}
-
-.cardsContainer {
-  position: absolute;
-  top: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-decoration: none;
-  color: black;
-  font-size: 1.25rem;
-  font-weight: 100;
-}
-
-.tab_box {
-  flex-direction: column;
-}
-.tab_box .tab_btn {
-  padding-bottom: 15px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.pointsLabTitle {
-  display: inline-block;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-left: 20px;
-}
-
-.preContainer {
-  display: flex;
-  justify-content: center;
-}
-.preContainer .container {
-  max-width: 1500px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.preContainer .container .BBSFS {
-  position: relative;
-  left: calc(0.5 * (100% - 1400px));
-}
-.preContainer .container h1 {
-  font-size: 2.5rem;
-}
-.preContainer .container .tab_box {
-  flex: 40%;
-  max-width: 600px;
-}
-
-@media (max-width: 1200px) {
-  .BBSFS {
-    left: 0;
-  }
-}
-@media (max-width: 1000px) {
-  .tab_box {
-    padding-right: calc(100% - 600px);
-    order: 2;
-  }
-  .tutorialScreen {
-    flex: 100%;
-    order: 1;
-    width: 100vw;
-    height: 50vw;
-  }
-}
-.tutorialScreen {
-  background-color: purple;
-  height: 700px;
-  min-width: 700px;
-  border-radius: 40px;
-  filter: drop-shadow(10px 10px 50px #151515);
-  margin-left: 50px;
-}
-@media screen and (max-width: 1307px) {
-  .tutorialScreen {
-    display: none;
-  }
-}
-
-.line {
-  position: absolute;
-  top: 37px;
-  left: 2px;
-  width: 3px;
-  height: 37px;
-  border-radius: 5px;
-  background-color: #00FF75;
-  transition: all 0.15s ease-in-out;
-}
-
-.active {
-  color: #00FF75;
-}
-
-.content {
-  padding-bottom: 30px;
-  line-height: 30px;
-  font-size: 1.2rem;
-}
-
-.contentActive {
-  display: block;
-}
-
-.contentInactive {
-  display: none;
 }/*# sourceMappingURL=index.css.map */

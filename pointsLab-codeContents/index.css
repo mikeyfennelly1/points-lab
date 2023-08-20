@@ -549,7 +549,6 @@ button:hover {
 }
 
 .cardsDesign {
-  background-color: transparent;
   padding-top: 100px;
 }
 .cardsDesign .titlesDiv {
@@ -582,10 +581,8 @@ button:hover {
   padding-bottom: 100px;
   justify-content: center;
 }
-.cardsDesign .cardCollection :hover {
-  background-color: #000c10;
-}
 .cardsDesign .cardCollection .cardContent {
+  background-color: #001319;
   align-self: start;
   min-height: 150px;
   display: flex;
@@ -608,10 +605,10 @@ button:hover {
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 .thirdPageContainer .thirdPage {
   display: grid;
-  grid-template-columns: repeat(1fr, 1fr);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -643,7 +640,7 @@ button:hover {
 .thirdPageContainer .thirdPage .left .viewPlans {
   max-width: -moz-fit-content;
   max-width: fit-content;
-  background-color: #00ff6e;
+  background-color: #FFE600;
   border-radius: 5px;
   border: 2px solid rgb(12, 12, 12);
   padding: 15px;
@@ -656,6 +653,16 @@ button:hover {
   filter: drop-shadow(3px 3px #000000);
   cursor: pointer;
 }
+.thirdPageContainer .thirdPage .left .viewPlans:hover {
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  background-color: rgb(12, 12, 12);
+  color: #D9D9D9;
+  filter: none;
+}
+.thirdPageContainer .thirdPage .left a:hover {
+  color: #00ff6e;
+}
 .thirdPageContainer .thirdPage .left .link {
   color: beige;
   text-decoration: none;
@@ -664,4 +671,28 @@ button:hover {
   background-color: #fffdea;
   height: 600px;
   width: 750px;
+}
+
+.fourthPageContainer {
+  width: 100vw;
+  height: 600px;
+  background-color: #272f34;
+  display: flex;
+  justify-content: center;
+}
+.fourthPageContainer .fourthPage {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 600px;
+  width: 1500px;
+}
+.fourthPageContainer .fourthPage .lhs {
+  height: 500px;
+  width: 750px;
+  border: 3px solid red;
+}
+.fourthPageContainer .fourthPage .rhs {
+  height: 500px;
+  width: 750px;
+  border: 3px solid red;
 }/*# sourceMappingURL=index.css.map */

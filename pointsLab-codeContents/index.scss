@@ -559,14 +559,17 @@ button:hover {
     }
     .cardCollection {
         // border: 3px solid navy;
+        cursor: pointer;
         display: flex;
         padding: 40px;
         padding-bottom: 100px;
         justify-content: center;
+        :hover {
+            background-color: #000c10;
+        }
         .cardContent {
             align-self: start;
             min-height: 150px;
-            background-color: #001319;
             display: flex;
             flex-wrap: wrap;
             max-width: 400px;
@@ -582,51 +585,65 @@ button:hover {
                 line-height: 40px;
             }
         }
-    }
+        }
 }
 .thirdPageContainer{
+    width: 100vw;
     display: flex;
-    max-width: 1500px;
     justify-content: center;
     .thirdPage {
         display: grid;
         grid-template-columns: repeat(1fr, 1fr);
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
-        border: 3px solid red;
-        .lhs {
-            display: grid;
-            flex: 40%;
-            h1 {
+        .left {
+            padding-top: 50px;
+            width: 40%;
+            max-height: 600px;
+            padding-left: 50px;
+            .acquire {
+                color: beige;
+                font-size: 2rem;
+                max-width: 600px;
                 font-family: 'Merriweather';
-                padding-bottom: 50px;
+                span {
+                    font-family: 'Merriweather';
+                    color: #00ff6e;
+                }
             }
-            h5 {
+            p {
+                max-width: 600px;
+                font-size: 1rem;
+                color: beige;
                 font-family: 'Montserrat-Variable';
+                font-weight: 300;
+                padding-top: 20px;
             }
             .viewPlans {
                 max-width: fit-content;
-                max-height: 30px;
-                background-color: $primaryYellow;
+                background-color: #00ff6e;
                 border-radius: 5px;
-                padding: 10px;
-                border: 1px solid black;
+                border: 2px solid rgb(12, 12, 12);
+                padding: 15px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-right: 20px;
+                margin-top: 50px;
+                margin-bottom: 80px;
                 color: black;
+                filter: drop-shadow(3px 3px #000000);
+                cursor: pointer;
             }
-            #fast {
-                font-family: 'Merriweather-Italic';
-                color: $secondaryTeal;
-            }
-            #pqbt {
-                font-family: 'Merriweather-Italic';
-                color: $secondaryTeal;
+            .link {
+                color: beige;
+                text-decoration: none;
             }
         }
-        .rhs {
-            flex: 60%;
-            max-width: 500px;
-            height: 500px;
-            background-color: #FFE600;
+        .right {
+            background-color: #fffdea;
+            height: 600px;
+            width: 750px;
         }
     }
 }

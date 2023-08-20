@@ -11,6 +11,7 @@ $primaryYellow: #FFE600;
     top: 1vh;
     width: 100vw;
 }
+
 @media screen and (max-width: 2220px) {
     .Layer_1 {
         top: 10vh;
@@ -23,17 +24,22 @@ $primaryYellow: #FFE600;
 }
 @media screen and (max-width: 1780px) {
     .Layer_1 {
+        top: 22vh;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .Layer_1 {
         top: 25vh;
     }
 }
 @media screen and (max-width: 1580px) {
     .Layer_1 {
-        top: 30vh;
+        top: 27vh;
     }
 }
 @media screen and (max-width: 1380px) {
     .Layer_1 {
-        top: 35vh;
+        top: 32vh;
     }
 }
 @media screen and (max-width: 1270px) {
@@ -44,6 +50,11 @@ $primaryYellow: #FFE600;
 @media screen and (max-width: 897px) {
     .Layer_1 {
         display: none;
+    }
+}
+@media screen and (max-width: 897px) {
+    body {
+        background-color: #001319;
     }
 }
 
@@ -174,34 +185,40 @@ button:hover {
         .contentLeft { // LEFT CONTENT
             background-color: transparent;
             padding-top: 150px;
-            padding-left: 20px;
             position: absolute;
             left: 0%;
             z-index: 2;
             @media screen and (min-width: 1420px) {
                 left: calc(0.5*(100% - 1420px));
             }
+            @media screen and (max-width: 897px) {
+                width: 100vw;
+            }
             .landingTitle {
+                padding-left: 20px;
                 background-color: transparent;
                 max-width: 590px;
                 h1 {
                     background-color: transparent;
                     font-family: 'Merriweather-Light';
                     @include textToggle(rgb(24, 24, 24), 5rem);
+                    @media screen and (max-width: 700px) {
+                        font-size: 4rem;
+                    }
                 }
                 #results {
-                        color: rgb(24, 24, 24);
-                        background-color: transparent;
-                        font-family: 'Merriweather';
-                        text-decoration: underline $secondaryTeal 3px;
-                    }
-                    #stress{
-                        color: rgb(24, 24, 24);
-                        background-color: transparent;
-                        font-family: 'Merriweather';
-                        text-decoration: line-through $secondaryTeal 3px;
-                    }
-                    h5 {
+                    color: rgb(24, 24, 24);
+                    background-color: transparent;
+                    font-family: 'Merriweather';
+                    text-decoration: underline $secondaryTeal 3px;
+                }
+                #stress{
+                    color: rgb(24, 24, 24);
+                    background-color: transparent;
+                    font-family: 'Merriweather';
+                    text-decoration: line-through $secondaryTeal 3px;
+                }
+                h5 {
                     background-color: transparent;
                     padding-top: 30px;
                     @include textToggle(rgb(24, 24, 24), 1.25rem);
@@ -209,21 +226,25 @@ button:hover {
                     font-family: 'Montserrat-Variable';
                     font-weight: 450;
                     line-height: 40px;
+                    @media screen and (max-width: 700px) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
-            
-            .tryORlogin {
-                .button {
-                    max-width: fit-content;
-                    background-color: $primaryYellow;
-                    border-radius: 5px;
-                    border: 2px solid rgb(12, 12, 12);
-                    padding: 15px;
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    margin-right: 20px;
-                    margin-top: 50px;
-                    margin-bottom: 80px;
+                
+                .tryORlogin {
+                    padding-left: 20px;
+                    .button {
+                        max-width: fit-content;
+                        background-color: $primaryYellow;
+                        border-radius: 5px;
+                        border: 2px solid rgb(12, 12, 12);
+                        padding: 15px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-right: 20px;
+                        margin-top: 50px;
+                        margin-bottom: 80px;
                     color: black;
                     filter: drop-shadow(3px 3px #000000);
                 }
@@ -245,52 +266,73 @@ button:hover {
                 filter: drop-shadow(0px 0px #000000);
             }
             .fourItems {
-                background-color: transparent;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 padding-top: 50px;
                 padding-bottom: 50px;
                 border-bottom: 1px solid rgb(135, 135, 135);
                 border-top: 1px solid rgb(135, 135, 135);
-                    h3 {
-                        background-color: transparent;
-                        font-size: 20px;
-                        font-family: 'Source-Code-Pro-Variable';
-                        font-weight: 625;
-                        color: $secondaryTeal;
-                        padding-bottom: 10px;
+                @media screen and (max-width: 897px) {
+                        background-color: #001319;
+                }
+                @media screen and (min-width: 897px) {
+                    background-color: transparent;
+                    padding-left: 20px;
+                }
+                h3 {
+                    background-color: transparent;
+                    font-size: 20px;
+                    font-family: 'Source-Code-Pro-Variable';
+                    font-weight: 625;
+                    color: $secondaryTeal;
+                    padding-bottom: 10px;
+                    @media screen and (max-width: 897px) {
+                            padding-left: 20px;
                     }
-                    h4 {
-                        background-color: transparent;
-                        font-size: 11px;
-                        font-family: 'Montserrat-Variable';
-                        color: $secondaryGrey;
+                }
+                h4 {
+                    background-color: transparent;
+                    font-size: 11px;
+                    font-family: 'Montserrat-Variable';
+                    color: $secondaryGrey;
+                    @media screen and (max-width: 897px) {
+                            padding-left: 20px;
                     }
                 }
             }
-            .contentRight {
-                position: absolute;
-                top: 230px;
-                left: 53%;
-                #Layer_2 {
-                    max-width: 700px;
-                    max-height: 700px;
-                    z-index: 3;
-                }
-                @media screen and (max-width: 897px){
-                    display: none;
-                }
-
         }
+        .contentRight {
+            position: absolute;
+            top: 230px;
+            left: 53%;
+            #Layer_2 {
+                max-width: 700px;
+                max-height: 700px;
+                z-index: 3;
+            }
+            @media screen and (max-width: 897px){
+                display: none;
+            }
+            
         }
+    }
     }
 
 // HEIGHT ADJUSTER 
 
     .heightAdjuster2 {
         // background-color: red;
+        display: flex;
+        align-items: end;
         width: 100vw;
-        height: 100vh; // this is adjusted in index.js regardless
+        height: 80vh; // this is adjusted in index.js regardless
+        // border: 3px solid red;
+        @media screen and (max-width: 897px) {
+            height: 70vh;
+        }
+        @media screen and (max-width: 700px) {
+            height: 66vh;
+        }
     }
 
 // CARDS DESIGN
@@ -307,12 +349,15 @@ button:hover {
 }
 
 .bbsfs {
+    background-color: #001319;
     position: relative;
     left: calc(0.5*(100% - 1500px));
     padding-bottom: 75px;
     padding-left: 30px;
+    padding-top: 50px;
     h1 {
         font-family: 'Merriweather';
+        font-size: 3rem;
     }
     h2 {
         font-family: 'Merriweather-Light';
@@ -325,16 +370,17 @@ button:hover {
         font-family: 'Merriweather-Italic';
         color: $secondaryTeal;
     }
-}
-
-.tab_box {
-    flex-direction: column;
-    .tab_btn {
-        padding-bottom: 15px;
-        font-size: 2rem;
-        font-weight: bold;
+    @media screen and (max-width: 600px) {
+        padding-top: 80px;
+    }
+    @media screen and (max-width: 555px) {
+        padding-top: 100px;
+    }
+    @media screen and (max-width: 500px) {
+        padding-top: 140px;
     }
 }
+
 
 .pointsLabTitle {
     display: inline-block;
@@ -345,6 +391,7 @@ button:hover {
 
 
 .preContainer {
+    background-color: #001319;
     display: flex;
     justify-content: center;
     .container {
@@ -353,19 +400,58 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
     }
-    h1 {
-        font-size: 2.5rem;
-        }
-        .tab_box {
-            flex: 40%;
-            padding-left: 30px;
+    .tab_box {
+        flex-direction: column;
+        .tab_btn {
+            padding-bottom: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Source-Code-Pro-Variable';
         }
     }
-    
+    h1 {
+        font-size: 2.5rem;
+    }
+    .tab_box {
+        flex: 40%;
+        padding-left: 30px;
+    }
+    .tutorialScreen {
+        background-color: transparent;
+        margin: 20px;
+        max-height: 700px;
+    }
+    .active {
+        color: $primaryTeal;
+    }    
+    .inactive {
+        color: $tertiaryGrey;
+    }
+    .content {
+        font-weight: 100;
+        color: $secondaryTeal;
+        padding-bottom: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+    }    
+    .contentActive{
+         display: block;
+    }    
+    .contentInactive {
+        display: none; 
+    }
+}
 
-    
-    @media (max-width: 1520px) {
-        .bbsfs {
+.traceLine1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    max-width: 100vw;
+    top: 120vh;
+}
+
+@media (max-width: 1520px) {
+    .bbsfs {
         left: 0;
     }
 }
@@ -381,9 +467,10 @@ button:hover {
         max-width: none;
     }
     .tutorialScreen {
-        flex: 100%;
+        padding-bottom: 70px;
+        flex: 80%;
         order: 1;
-        width: 100vw;
+        width: 80vw;
         height: 50vw;
     }
 }
@@ -394,12 +481,6 @@ button:hover {
     }
 }
 
-.tutorialScreen {
-    height: 700px;
-    background-color: grey;
-    border-radius: 40px;
-    margin: 20px;
-}
 
 .line {
     position: absolute;
@@ -412,32 +493,11 @@ button:hover {
     transition: all .15s ease-in-out;
 }    
 
-.active {
-    color: $primaryTeal;
-}    
-
-
-
-.inactive {
-    color: $tertiaryGrey;
-}
- .content {
-    color: $secondaryTeal;
-    padding-bottom: 30px;
-    line-height: 30px;
-    font-size: 1.2rem;
-}    
-
-.contentActive{
-     display: block;
-}    
-.contentInactive {
-    display: none; 
-}        
 
 
 
 .cardsDesign{
+    background-color: #001319;
     padding-top: 100px;
     .titlesDiv {
         position: relative;

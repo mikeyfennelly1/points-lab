@@ -147,6 +147,7 @@ body {
 }
 .topnav .conicalFlask {
   max-height: 20px;
+  cursor: pointer;
 }
 .topnav button {
   max-width: -moz-fit-content;
@@ -156,6 +157,31 @@ body {
   padding: 10px;
   border: 1px solid black;
   color: black;
+}
+@media screen and (max-width: 800px) {
+  .topnav .second2items a {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topnav .second2items .button {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topnav .linksLeft {
+    display: none;
+  }
+}
+.topnav .burgerMenu {
+  display: block;
+  max-height: 30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .topnav .burgerMenu {
+    display: none;
+  }
 }
 
 .heightAdjuster1 {

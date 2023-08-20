@@ -1,6 +1,6 @@
 .Layer_1 {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 1vh;
   width: 100vw;
 }
@@ -87,8 +87,10 @@
   color: white;
 }
 
-body {
-  background-color: white;
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #001319;
+  }
 }
 
 .banner {
@@ -188,6 +190,11 @@ body {
   height: 69px;
   width: 100vw;
 }
+@media screen and (max-width: 897px) {
+  .heightAdjuster1 {
+    background-color: #fffdea;
+  }
+}
 
 button:hover {
   transition: 0.1s ease-in-out;
@@ -263,6 +270,7 @@ button:hover {
 @media screen and (max-width: 700px) {
   .mainLandingContent .contentContainer .contentLeft .landingTitle h5 {
     font-size: 1.2rem;
+    padding-right: 20px;
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin {
@@ -291,11 +299,10 @@ button:hover {
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
   padding-left: 30px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Variable";
+  font-weight: 800;
+  color: #000;
   text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: 100;
 }
 .mainLandingContent .contentContainer .contentLeft .button:hover {
   transition: 0.1s ease-in-out;
@@ -371,7 +378,8 @@ button:hover {
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {
-    height: 70vh;
+    height: 69vh;
+    background-color: #fffdea;
   }
 }
 @media screen and (max-width: 700px) {
@@ -438,7 +446,7 @@ button:hover {
 }
 
 .preContainer {
-  background-color: #001319;
+  background-color: transparent;
   display: flex;
   justify-content: center;
 }
@@ -449,6 +457,7 @@ button:hover {
   flex-wrap: wrap;
 }
 .preContainer .tab_box {
+  padding-right: 50px;
   flex-direction: column;
 }
 .preContainer .tab_box .tab_btn {
@@ -456,6 +465,7 @@ button:hover {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Source-Code-Pro-Variable";
+  cursor: pointer;
 }
 .preContainer h1 {
   font-size: 2.5rem;
@@ -489,11 +499,12 @@ button:hover {
   display: none;
 }
 
-.traceLine1 {
+.traceLine {
+  top: 10vh;
   position: absolute;
   z-index: -1;
   opacity: 0.5;
-  max-width: 100vw;
+  width: 100vw;
   top: 120vh;
 }
 
@@ -538,7 +549,7 @@ button:hover {
 }
 
 .cardsDesign {
-  background-color: #001319;
+  background-color: transparent;
   padding-top: 100px;
 }
 .cardsDesign .titlesDiv {
@@ -565,12 +576,17 @@ button:hover {
   padding-right: 50px;
 }
 .cardsDesign .cardCollection {
-  height: 200px;
   display: flex;
   padding: 40px;
+  padding-bottom: 100px;
   justify-content: center;
 }
 .cardsDesign .cardCollection .cardContent {
+  align-self: start;
+  min-height: 150px;
+  background-color: #001319;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 400px;
   overflow: hidden;
   margin-left: 30px;
@@ -580,6 +596,8 @@ button:hover {
   border-radius: 30px;
 }
 .cardsDesign .cardCollection .cardContent h3 {
+  font-family: "Source-Code-Pro-Variable";
+  color: #00d86c;
   line-height: 40px;
 }
 
@@ -589,6 +607,8 @@ button:hover {
   justify-content: center;
 }
 .thirdPageContainer .thirdPage {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
   display: flex;
   flex-wrap: wrap;
   border: 3px solid red;

@@ -156,6 +156,7 @@ body {
     }
     .conicalFlask {
         max-height: 20px;
+        cursor: pointer;
     }
     button {
         max-width: fit-content;
@@ -164,6 +165,31 @@ body {
         padding: 10px;
         border: 1px solid black;
         color: black;
+    }
+    .second2items {
+        a {
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+        .button {
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+    .linksLeft {
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    .burgerMenu {
+        display: block;
+        max-height: 30px;
+        cursor: pointer;
+        @media screen and (min-width: 800px) {
+            display: none;
+        }
     }
 }
 

@@ -308,6 +308,9 @@ button:hover {
   color: #000;
   text-decoration: none;
 }
+.mainLandingContent .contentContainer .contentLeft .tryORlogin a:hover {
+  color: #009B6C;
+}
 .mainLandingContent .contentContainer .contentLeft .button:hover {
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -688,7 +691,7 @@ button:hover {
 .fourthPageContainer .fourthPage {
   display: flex;
   max-height: 600px;
-  max-width: 1500px;
+  width: 1500px;
 }
 .fourthPageContainer .fourthPage .lhs {
   max-height: 300px;
@@ -702,7 +705,7 @@ button:hover {
 }
 .fourthPageContainer .fourthPage .lhs p {
   font-family: "Montserrat-Variable";
-  font-weight: 200;
+  font-weight: 500;
 }
 .fourthPageContainer .fourthPage .lhs p span {
   color: #00FF75;
@@ -746,10 +749,22 @@ button:hover {
   top: 4px;
   left: 56px;
 }
+.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselPosition1 {
+  z-index: 3;
+  opacity: 100%;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselPosition2 {
+  z-index: 2;
+  background-color: #c5a700;
+  left: 725px;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselInactive {
+  display: none;
+}
 .fourthPageContainer .fourthPage .rhs {
+  display: block;
   padding-left: 50px;
   max-height: 300px;
-  width: 65%;
   filter: drop-shadow(10px 10px black);
 }
 .fourthPageContainer .fourthPage .rhs .carousel {
@@ -758,6 +773,7 @@ button:hover {
   width: 550px;
   padding: 50px;
   display: inline-block;
+  overflow-x: visible;
 }
 .fourthPageContainer .fourthPage .rhs .carousel h1 {
   font-family: "Montserrat-Italic-Variable";

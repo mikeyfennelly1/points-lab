@@ -296,6 +296,9 @@ button:hover {
                     color: #000;
                     text-decoration: none;
                 }
+                a:hover {
+                    color: #009B6C;
+                }
             }
             .button:hover {
                 transition: 0.1s ease-in-out;
@@ -670,7 +673,7 @@ button:hover {
     .fourthPage {
         display: flex;
         max-height: 600px;
-        max-width: 1500px;
+        width: 1500px;
         .lhs {
             max-height: 300px;
             width: 35%;
@@ -682,7 +685,7 @@ button:hover {
             }
             p {
                 font-family: "Montserrat-Variable";
-                font-weight: 200;
+                font-weight: 500;
                 span {
                     color: #00FF75;
                 }
@@ -726,12 +729,24 @@ button:hover {
                     left: 56px;
                 
                 }
+                .carouselPosition1 {
+                    z-index: 3;
+                    opacity: 100%;
+                }
+                .carouselPosition2 {
+                    z-index: 2;
+                    background-color: #c5a700;
+                    left: 725px;
+                }
+                .carouselInactive {
+                    display: none;
+                }
             }
         }
         .rhs {
+            display: block;
             padding-left: 50px;
             max-height: 300px;
-            width: 65%;
             filter: drop-shadow(10px 10px black);
             .carousel {
                 position: absolute;
@@ -739,6 +754,7 @@ button:hover {
                 width: 550px;
                 padding: 50px;
                 display: inline-block;
+                overflow-x: visible;
                 h1 {
                     font-family: 'Montserrat-Italic-Variable';
                     font-weight: 400;

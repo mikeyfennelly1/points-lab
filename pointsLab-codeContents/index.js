@@ -49,9 +49,9 @@ const carousel2 = document.querySelector('.carousel2')
 const carousel3 = document.querySelector('.carousel3')
 
 
-const leftButtonClick = () => {
-    rhs.style.display = 'none';
-}
+// const leftButtonClick = () => {
+//     rhs.style.display = 'none';
+// }
 
 // const glider1 = () => {
 //     const carousel1 = document.querySelector('.carousel1');
@@ -70,7 +70,7 @@ gliders.forEach((glider, index)=> {
         glider.classList.remove('gliderInactive');
         glider.classList.add('gliderActive');
 
-        const glider1 = document.getElementById('glider1');
-        const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+        // const glider1 = document.getElementById('glider1');
+        // const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
     })
 });

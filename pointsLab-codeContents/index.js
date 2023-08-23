@@ -40,6 +40,37 @@ tabs.forEach((tab, index)=> {
 })
 });
 
-const carousel1 = document.querySelector('.carousel1');
-const carouselIndicator = document.querySelector('.carouselIndicator');
+const rhs = document.querySelector('.rhs');
+const gliders = document.querySelectorAll('.glider');
+const carousel = document.querySelectorAll('.carousel')
 
+const carousel1 = document.querySelector('.carousel1')
+const carousel2 = document.querySelector('.carousel2')
+const carousel3 = document.querySelector('.carousel3')
+
+
+const leftButtonClick = () => {
+    rhs.style.display = 'none';
+}
+
+// const glider1 = () => {
+//     const carousel1 = document.querySelector('.carousel1');
+
+//     carousel1.style.display = 'none';
+//     carousel1.classList.add('active');
+// }
+
+let activeIndex = 0;
+
+gliders.forEach((glider, index)=> {
+    glider.addEventListener('click', (e)=>{
+        gliders.forEach(glider=>{glider.classList.remove('gliderActive')});
+        gliders.forEach(glider=>{glider.classList.add('gliderInactive')})
+        
+        glider.classList.remove('gliderInactive');
+        glider.classList.add('gliderActive');
+
+        const glider1 = document.getElementById('glider1');
+        const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+    })
+});

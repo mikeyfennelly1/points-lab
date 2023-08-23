@@ -67,6 +67,10 @@ $primaryYellow: #FFE600;
     font-family: "Montserrat-Variable";
 }
 @font-face {
+    src: url(Montserrat-Italic-VariableFont_wght.ttf);
+    font-family: "Montserrat-Italic-Variable";
+}
+@font-face {
     src: url(Merriweather-Regular.ttf);
     font-family: "Merriweather";
 }
@@ -658,24 +662,99 @@ button:hover {
 
 .fourthPageContainer {
     width: 100vw;
-    height: 600px;
+    height: 300px;
     background-color: #272f34;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
     .fourthPage {
         display: flex;
-        flex-wrap: wrap;
         max-height: 600px;
-        width: 1500px;
+        max-width: 1500px;
         .lhs {
-            height: 500px;
-            width: 750px;
-            border: 3px solid red;
+            max-height: 300px;
+            width: 35%;
+            padding-left: 30px;
+            h1 {
+                font-family: 'Merriweather';
+                font-size: 2rem;
+                max-width: 400px;
+            }
+            p {
+                font-family: "Montserrat-Variable";
+                font-weight: 200;
+                span {
+                    color: #00FF75;
+                }
+            }
+            .glidersDiv {
+                position: absolute;
+                background-color: #272f34;
+                border-radius: 10px;
+                border: 1px solid #e3e3e3;
+                max-width: fit-content;
+                padding-left: 5px;
+                padding-right: 5px;
+                .glider {
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .gliderActive {
+                    transition: 0.4s ease-in-out;
+                    width: 30px;
+                    background-color: #00FF75;
+                }
+                .gliderInactive {
+                    transition: 0.4s ease-in-out;
+                    width: 11px;
+                    background-color: #b0b0b0;
+                }
+                #glider1 {
+                    top: 4px;
+                    left: 6px;
+                }
+                #glider2 {
+                    top: 4px;
+                    left: 41px;
+                    
+                }
+                #glider3 {
+                    top: 4px;
+                    left: 56px;
+                
+                }
+            }
         }
         .rhs {
-            height: 500px;
-            width: 750px;
-            border: 3px solid red;
+            padding-left: 50px;
+            max-height: 300px;
+            width: 65%;
+            filter: drop-shadow(10px 10px black);
+            .carousel {
+                position: absolute;
+                background-color: #ffd900;
+                width: 550px;
+                padding: 50px;
+                display: inline-block;
+                h1 {
+                    font-family: 'Montserrat-Italic-Variable';
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-family: 'Montserrat-Variable';
+                    font-weight: 400;
+                    font-size: 0.7rem;
+                    span {
+                        font-family: 'Montserrat-Italic-Variable';
+                        font-weight: 700;
+                    }
+            }
+            }
         }
     }
 }
+

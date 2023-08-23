@@ -59,6 +59,10 @@
   font-family: "Montserrat-Variable";
 }
 @font-face {
+  src: url(Montserrat-Italic-VariableFont_wght.ttf);
+  font-family: "Montserrat-Italic-Variable";
+}
+@font-face {
   src: url(Merriweather-Regular.ttf);
   font-family: "Merriweather";
 }
@@ -675,24 +679,46 @@ button:hover {
 
 .fourthPageContainer {
   width: 100vw;
-  height: 600px;
+  height: 300px;
   background-color: #272f34;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 .fourthPageContainer .fourthPage {
   display: flex;
-  flex-wrap: wrap;
   max-height: 600px;
-  width: 1500px;
+  max-width: 1500px;
 }
 .fourthPageContainer .fourthPage .lhs {
-  height: 500px;
-  width: 750px;
-  border: 3px solid red;
+  max-height: 300px;
+  width: 35%;
+  padding-left: 30px;
+}
+.fourthPageContainer .fourthPage .lhs h1 {
+  font-family: "Merriweather";
+  font-size: 2rem;
+  max-width: 400px;
+}
+.fourthPageContainer .fourthPage .lhs p {
+  font-family: "Montserrat-Variable";
+  font-weight: 200;
+}
+.fourthPageContainer .fourthPage .lhs p span {
+  color: #00FF75;
 }
 .fourthPageContainer .fourthPage .rhs {
-  height: 500px;
-  width: 750px;
-  border: 3px solid red;
+  padding-left: 50px;
+  max-height: 300px;
+  width: 65%;
+  filter: drop-shadow(10px 10px black);
+}
+.fourthPageContainer .fourthPage .rhs .carousel1 {
+  background-color: #FFE600;
+  width: 550px;
+  padding: 50px;
+}
+.fourthPageContainer .fourthPage .rhs .carousel1 h1 {
+  font-family: "Montserrat-Italic-Variable";
+  font-size: 1.5rem;
 }/*# sourceMappingURL=index.css.map */

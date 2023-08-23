@@ -774,3 +774,49 @@ button:hover {
     }
 }
 
+.bottomNavigation {
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bottomNavContainer {
+        height: 113px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: start;
+        width: 1000px;
+        .logoContainer {
+            .logo {
+                padding-bottom: 57px;
+                .conicalFlask {
+                    max-height: 21px;
+                }
+                h2 {
+                    display: inline;
+                    font-weight: bolder;
+                    font-size: 1.6rem;
+                    font-family: 'Merriweather-Light';
+                    color: #000;
+                }
+            }
+            h6 {
+                color: #000;
+                display: flex;
+            }
+        }
+        h3 {
+            color: #00d86c;
+        }
+        a {
+            align-self: start;
+            display: flex;
+            left: 0px;
+            line-height: 30px;
+            text-decoration: none;
+            font-family: 'Montserrat-Variable';
+            font-weight: 400;
+            color: #000;
+        }
+    }
+}

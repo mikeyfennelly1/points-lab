@@ -788,4 +788,49 @@ button:hover {
 .fourthPageContainer .fourthPage .rhs .carousel p span {
   font-family: "Montserrat-Italic-Variable";
   font-weight: 700;
+}
+
+.bottomNavigation {
+  height: 300px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomNavigation .bottomNavContainer {
+  height: 113px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: start;
+  width: 1000px;
+}
+.bottomNavigation .bottomNavContainer .logoContainer .logo {
+  padding-bottom: 57px;
+}
+.bottomNavigation .bottomNavContainer .logoContainer .logo .conicalFlask {
+  max-height: 21px;
+}
+.bottomNavigation .bottomNavContainer .logoContainer .logo h2 {
+  display: inline;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  font-family: "Merriweather-Light";
+  color: #000;
+}
+.bottomNavigation .bottomNavContainer .logoContainer h6 {
+  color: #000;
+  display: flex;
+}
+.bottomNavigation .bottomNavContainer h3 {
+  color: #00d86c;
+}
+.bottomNavigation .bottomNavContainer a {
+  align-self: start;
+  display: flex;
+  left: 0px;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: "Montserrat-Variable";
+  font-weight: 400;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */

@@ -39,3 +39,7 @@ tabs.forEach((tab, index)=> {
         console.log(e.target.offsetTop);
 })
 });
+
+const carousel1 = document.querySelector('.carousel1');
+const carouselIndicator = document.querySelector('.carouselIndicator');
+

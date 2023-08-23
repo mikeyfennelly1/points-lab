@@ -707,18 +707,69 @@ button:hover {
 .fourthPageContainer .fourthPage .lhs p span {
   color: #00FF75;
 }
+.fourthPageContainer .fourthPage .lhs .glidersDiv {
+  position: absolute;
+  background-color: #272f34;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv .glider {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv .gliderActive {
+  transition: 0.4s ease-in-out;
+  width: 30px;
+  background-color: #00FF75;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv .gliderInactive {
+  transition: 0.4s ease-in-out;
+  width: 11px;
+  background-color: #b0b0b0;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv #glider1 {
+  top: 4px;
+  left: 6px;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv #glider2 {
+  top: 4px;
+  left: 41px;
+}
+.fourthPageContainer .fourthPage .lhs .glidersDiv #glider3 {
+  top: 4px;
+  left: 56px;
+}
 .fourthPageContainer .fourthPage .rhs {
   padding-left: 50px;
   max-height: 300px;
   width: 65%;
   filter: drop-shadow(10px 10px black);
 }
-.fourthPageContainer .fourthPage .rhs .carousel1 {
-  background-color: #FFE600;
+.fourthPageContainer .fourthPage .rhs .carousel {
+  position: absolute;
+  background-color: #ffd900;
   width: 550px;
   padding: 50px;
+  display: inline-block;
 }
-.fourthPageContainer .fourthPage .rhs .carousel1 h1 {
+.fourthPageContainer .fourthPage .rhs .carousel h1 {
   font-family: "Montserrat-Italic-Variable";
+  font-weight: 400;
   font-size: 1.5rem;
+}
+.fourthPageContainer .fourthPage .rhs .carousel p {
+  font-family: "Montserrat-Variable";
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.fourthPageContainer .fourthPage .rhs .carousel p span {
+  font-family: "Montserrat-Italic-Variable";
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */

@@ -122,12 +122,16 @@ body {
 .banner {
     @include centering();
     @include textToggle($primaryGrey, 0.8rem, 400);
-    font-family: 'Source-Code-Pro-Variable', sans-serif;
     line-height: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #009B6C;
     text-decoration: dashed underline;
+    p {
+        font-family: 'Source-Code-Pro-Variable', sans-serif;
+        cursor: pointer;
+    }
+
 }
 
 .topnavContainer {

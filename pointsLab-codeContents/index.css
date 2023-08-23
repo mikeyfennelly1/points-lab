@@ -107,13 +107,16 @@
   color: #D9D9D9;
   font-size: 0.8rem;
   font-weight: 400;
-  font-family: "Source-Code-Pro-Variable", sans-serif;
   line-height: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #009B6C;
   -webkit-text-decoration: dashed underline;
           text-decoration: dashed underline;
+}
+.banner p {
+  font-family: "Source-Code-Pro-Variable", sans-serif;
+  cursor: pointer;
 }
 
 .topnavContainer {

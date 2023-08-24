@@ -418,10 +418,14 @@ button:hover {
   padding-top: 50px;
 }
 .bbsfs h1 {
+  position: relative;
+  z-index: 2;
   font-family: "Merriweather";
   font-size: 3rem;
 }
 .bbsfs h2 {
+  position: relative;
+  z-index: 2;
   font-family: "Merriweather-Light";
 }
 .bbsfs #by {
@@ -464,6 +468,8 @@ button:hover {
   max-width: 1500px;
   justify-content: center;
   display: flex;
+  display: relative;
+  z-index: 2;
   flex-wrap: wrap;
 }
 .preContainer .tab_box {
@@ -510,12 +516,11 @@ button:hover {
 }
 
 .traceLine {
-  top: 10vh;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.5;
   width: 100vw;
-  top: 120vh;
+  top: 100vh;
 }
 
 @media (max-width: 1520px) {
@@ -560,6 +565,7 @@ button:hover {
 
 .cardsDesign {
   padding-top: 100px;
+  background-color: #001319;
 }
 .cardsDesign .titlesDiv {
   position: relative;
@@ -592,6 +598,7 @@ button:hover {
   justify-content: center;
 }
 .cardsDesign .cardCollection .cardContent {
+  z-index: 2;
   background-color: #001319;
   align-self: start;
   min-height: 150px;
@@ -611,7 +618,7 @@ button:hover {
   line-height: 40px;
 }
 
-.thirdPageContainer {
+traceLine .thirdPageContainer {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -619,29 +626,29 @@ button:hover {
   padding-bottom: 100px;
   background-color: #001319;
 }
-.thirdPageContainer .thirdPage {
+traceLine .thirdPageContainer .thirdPage {
   display: grid;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.thirdPageContainer .thirdPage .left {
+traceLine .thirdPageContainer .thirdPage .left {
   padding-top: 50px;
   width: 40%;
   max-height: 600px;
   padding-left: 50px;
 }
-.thirdPageContainer .thirdPage .left .acquire {
+traceLine .thirdPageContainer .thirdPage .left .acquire {
   color: beige;
   font-size: 2rem;
   max-width: 750px;
   font-family: "Merriweather";
 }
-.thirdPageContainer .thirdPage .left .acquire span {
+traceLine .thirdPageContainer .thirdPage .left .acquire span {
   font-family: "Merriweather";
   color: #00ff6e;
 }
-.thirdPageContainer .thirdPage .left p {
+traceLine .thirdPageContainer .thirdPage .left p {
   max-width: 600px;
   font-size: 1rem;
   color: beige;
@@ -649,7 +656,7 @@ button:hover {
   font-weight: 300;
   padding-top: 20px;
 }
-.thirdPageContainer .thirdPage .left .viewPlans {
+traceLine .thirdPageContainer .thirdPage .left .viewPlans {
   max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #FFE600;
@@ -665,21 +672,21 @@ button:hover {
   filter: drop-shadow(3px 3px #000000);
   cursor: pointer;
 }
-.thirdPageContainer .thirdPage .left .viewPlans:hover {
+traceLine .thirdPageContainer .thirdPage .left .viewPlans:hover {
   transition: 0.1s ease-in-out;
   cursor: pointer;
   background-color: rgb(12, 12, 12);
   color: #D9D9D9;
   filter: none;
 }
-.thirdPageContainer .thirdPage .left a:hover {
+traceLine .thirdPageContainer .thirdPage .left a:hover {
   color: #00ff6e;
 }
-.thirdPageContainer .thirdPage .left .link {
+traceLine .thirdPageContainer .thirdPage .left .link {
   color: beige;
   text-decoration: none;
 }
-.thirdPageContainer .thirdPage .right {
+traceLine .thirdPageContainer .thirdPage .right {
   background-color: #fffdea;
   height: 600px;
   width: 750px;

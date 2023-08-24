@@ -49,16 +49,6 @@ const carousel2 = document.querySelector('.carousel2')
 const carousel3 = document.querySelector('.carousel3')
 
 
-// const leftButtonClick = () => {
-//     rhs.style.display = 'none';
-// }
-
-// const glider1 = () => {
-//     const carousel1 = document.querySelector('.carousel1');
-
-//     carousel1.style.display = 'none';
-//     carousel1.classList.add('active');
-// }
 
 let activeIndex = 0;
 

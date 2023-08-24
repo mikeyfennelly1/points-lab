@@ -388,8 +388,8 @@ button:hover {
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {
-    height: 69vh;
     background-color: #fffdea;
+    height: 69vh;
   }
 }
 @media screen and (max-width: 700px) {
@@ -807,6 +807,8 @@ button:hover {
   grid-template-columns: auto auto auto auto;
   align-items: start;
   width: 1000px;
+  position: relative;
+  z-index: 2;
 }
 .bottomNavigation .bottomNavContainer .logoContainer .logo {
   padding-bottom: 57px;
@@ -837,4 +839,11 @@ button:hover {
   font-family: "Montserrat-Variable";
   font-weight: 400;
   color: #000;
+}
+.bottomNavigation .navBottomLine {
+  position: absolute;
+  z-index: 1;
+  max-width: 100vw;
+  left: 0;
+  opacity: 50%;
 }/*# sourceMappingURL=index.css.map */

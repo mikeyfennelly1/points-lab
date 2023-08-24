@@ -602,7 +602,7 @@ button:hover {
         }
         }
 }
-traceLine
+
 .thirdPageContainer{
     width: 100vw;
     display: flex;
@@ -760,24 +760,33 @@ traceLine
             display: block;
             padding-left: 50px;
             max-height: 300px;
+            overflow-x: auto;
             filter: drop-shadow(10px 10px black);
+            width: 50%;
             .carousel {
                 position: absolute;
-                background-color: #ffd900;
-                width: 550px;
                 padding: 50px;
+                background-color: #ffd900;
                 display: inline-block;
                 overflow-x: visible;
                 h1 {
+                    color: #000000;
                     font-family: 'Montserrat-Italic-Variable';
                     font-weight: 400;
                     font-size: 1.5rem;
+                    span {
+                        color: #000000;
+                        font-family: 'Montserrat-Italic-Variable';
+                        font-weight: 700;
+                    }
                 }
                 p {
+                    color: #000000;
                     font-family: 'Montserrat-Variable';
                     font-weight: 400;
                     font-size: 0.7rem;
                     span {
+                        color: #000000;
                         font-family: 'Montserrat-Italic-Variable';
                         font-weight: 700;
                     }

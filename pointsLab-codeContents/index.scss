@@ -684,12 +684,11 @@ button:hover {
     justify-content: center;
     padding-top: 100px;
     .fourthPage {
-        display: flex;
         max-height: 600px;
-        width: 1500px;
         .lhs {
             max-height: 300px;
             width: 35%;
+            left: calc(0.5*(100vw - 1500px));
             padding-left: 30px;
             h1 {
                 font-family: 'Merriweather';
@@ -742,18 +741,6 @@ button:hover {
                     left: 56px;
                 
                 }
-                .carouselPosition1 {
-                    z-index: 3;
-                    opacity: 100%;
-                }
-                .carouselPosition2 {
-                    z-index: 2;
-                    background-color: #c5a700;
-                    left: 725px;
-                }
-                .carouselInactive {
-                    display: none;
-                }
             }
         }
         .rhs {
@@ -762,13 +749,13 @@ button:hover {
             max-height: 300px;
             overflow-x: auto;
             filter: drop-shadow(10px 10px black);
-            width: 50%;
             .carousel {
-                position: absolute;
+                max-height: 300px;
                 padding: 50px;
                 background-color: #ffd900;
-                display: inline-block;
                 overflow-x: visible;
+                height: 80px;
+                display: inline-block;
                 h1 {
                     color: #000000;
                     font-family: 'Montserrat-Italic-Variable';
@@ -790,7 +777,32 @@ button:hover {
                         font-family: 'Montserrat-Italic-Variable';
                         font-weight: 700;
                     }
+                }
             }
+            .carouselPosition1 {
+                position: relative;
+                top: 50px;
+                width: 600px;
+                z-index: 3;
+                opacity: 100%;
+            }
+            .carouselPosition2 {
+                top: -130px;
+                position: relative;
+                width: 600px;
+                z-index: 2;
+                background-color: #c5a700;
+                left: 725px;
+            }
+            .carouselPosition3 {
+                position: relative;
+                width: 600px;
+                z-index: 1;
+                background-color: #c5a700;
+                left: 725px;
+            }
+            .carouselInactive {
+                transform: translateX(50%);
             }
         }
     }

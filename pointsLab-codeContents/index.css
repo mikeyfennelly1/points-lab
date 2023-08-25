@@ -701,13 +701,12 @@ button:hover {
   padding-top: 100px;
 }
 .fourthPageContainer .fourthPage {
-  display: flex;
   max-height: 600px;
-  width: 1500px;
 }
 .fourthPageContainer .fourthPage .lhs {
   max-height: 300px;
   width: 35%;
+  left: calc(0.5 * (100vw - 1500px));
   padding-left: 30px;
 }
 .fourthPageContainer .fourthPage .lhs h1 {
@@ -761,32 +760,20 @@ button:hover {
   top: 4px;
   left: 56px;
 }
-.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselPosition1 {
-  z-index: 3;
-  opacity: 100%;
-}
-.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselPosition2 {
-  z-index: 2;
-  background-color: #c5a700;
-  left: 725px;
-}
-.fourthPageContainer .fourthPage .lhs .glidersDiv .carouselInactive {
-  display: none;
-}
 .fourthPageContainer .fourthPage .rhs {
   display: block;
   padding-left: 50px;
   max-height: 300px;
   overflow-x: auto;
   filter: drop-shadow(10px 10px black);
-  width: 50%;
 }
 .fourthPageContainer .fourthPage .rhs .carousel {
-  position: absolute;
+  max-height: 300px;
   padding: 50px;
   background-color: #ffd900;
-  display: inline-block;
   overflow-x: visible;
+  height: 80px;
+  display: inline-block;
 }
 .fourthPageContainer .fourthPage .rhs .carousel h1 {
   color: #000000;
@@ -809,6 +796,31 @@ button:hover {
   color: #000000;
   font-family: "Montserrat-Italic-Variable";
   font-weight: 700;
+}
+.fourthPageContainer .fourthPage .rhs .carouselPosition1 {
+  position: relative;
+  top: 50px;
+  width: 600px;
+  z-index: 3;
+  opacity: 100%;
+}
+.fourthPageContainer .fourthPage .rhs .carouselPosition2 {
+  top: -130px;
+  position: relative;
+  width: 600px;
+  z-index: 2;
+  background-color: #c5a700;
+  left: 725px;
+}
+.fourthPageContainer .fourthPage .rhs .carouselPosition3 {
+  position: relative;
+  width: 600px;
+  z-index: 1;
+  background-color: #c5a700;
+  left: 725px;
+}
+.fourthPageContainer .fourthPage .rhs .carouselInactive {
+  transform: translateX(50%);
 }
 
 .bottomNavigation {

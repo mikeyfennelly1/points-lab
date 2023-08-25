@@ -1,0 +1,7 @@
+- when button 1 is active, card 1 must also be active
+- when button 2 is active, card 2 must also be active
+- when button 3 is active, card 3 must also be active
+
+if active card has to be in focused position
+
+what to do about the inactive cards?

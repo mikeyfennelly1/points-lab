@@ -134,7 +134,7 @@ body {
 
 }
 
-.topnavContainer {
+.topNavContainer {
     display: flex;
     justify-content: center;
 }
@@ -778,12 +778,12 @@ button:hover {
                         font-weight: 700;
                     }
                 }
-                .carousel[data-status="unknown"] {
+                // .carousel[data-status="unknown"] {
                     
-                }
-                .carousel[data-status="active"] {
+                // }
+                // .carousel[data-status="active"] {
                     
-                }
+                // }
             }
             .carouselPosition1 {
                 position: relative;

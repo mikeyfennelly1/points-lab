@@ -778,6 +778,12 @@ button:hover {
                         font-weight: 700;
                     }
                 }
+                .carousel[data-status="unknown"] {
+                    
+                }
+                .carousel[data-status="active"] {
+                    
+                }
             }
             .carouselPosition1 {
                 position: relative;
@@ -808,6 +814,11 @@ button:hover {
     }
 }
 
+
+
+
+
+// BOTTOM NAVIGATION ////////////////////////////////////////////////////////////
 .bottomNavigation {
     height: 300px;
     background-color: #ffffff;

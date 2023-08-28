@@ -12,8 +12,8 @@ left.addEventListener('click', (e)=>{
 });
 right.addEventListener('click', (e)=>{
     let firstElement = myArray[0];
-    console.log('firstElement: ' + firstElement);
-    
+    myArray.shift();
     myArray.push(firstElement);
     console.log(myArray);
+    console.log('firstElement: ' + firstElement);
 });

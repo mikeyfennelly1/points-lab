@@ -119,7 +119,7 @@
   cursor: pointer;
 }
 
-.topnavContainer {
+.topNavContainer {
   display: flex;
   justify-content: center;
 }

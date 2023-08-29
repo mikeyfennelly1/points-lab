@@ -1,0 +1,180 @@
+@font-face {
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-family: "Montserrat-Variable";
+}
+@font-face {
+    src: url(Montserrat-Italic-VariableFont_wght.ttf);
+    font-family: "Montserrat-Italic-Variable";
+}
+@font-face {
+    src: url(Merriweather-Regular.ttf);
+    font-family: "Merriweather";
+}
+@font-face {
+    src: url(Merriweather-Italic.ttf);
+    font-family: "Merriweather-Italic";
+}
+@font-face {
+    src: url(Merriweather-Light.ttf);
+    font-family: "Merriweather-Light";
+}
+@font-face {
+    src: url(Merriweather-Bold.ttf);
+    font-family: "Merriweather-Bold";
+}
+@font-face {
+    src: url(SourceCodePro-VariableFont_wght.ttf);
+    font-family: "Source-Code-Pro-Variable";
+}
+
+body {
+    margin: 0;
+}
+
+.fourthPageContainer {
+    width: 100vw;
+    height: 300px;
+    background-color: #272f34;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.fourthPage {
+    display: flex;
+    max-height: 600px;
+    max-width: 1500px;
+}
+
+.lhs {
+    max-height: 300px;
+    width: 35%;
+    padding-left: 30px;
+}
+.lhs h1 {
+    font-family: 'Merriweather';
+    font-size: 2rem;
+    max-width: 400px;
+}
+.lhs p {
+    font-family: "Montserrat-Variable";
+    font-weight: 500;
+}
+.lhs span {
+    color: #00FF75;
+}
+
+.rhs {
+    display: block;
+    padding-left: 50px;
+    max-height: 300px;
+    filter: drop-shadow(10px 10px black);
+} .rhs p {
+    font-family: 'Montserrat-Variable';
+    font-weight: 400;
+    font-size: 0.7rem;
+} .rhs h1 {
+    font-family: 'Montserrat-Italic-Variable';
+    font-weight: 400;
+} .rhs span {
+    font-family: 'Montserrat-Italic-Variable';
+    font-weight: 700;
+}
+
+.carousel {
+    position: absolute;
+    background-color: #ffd900;
+    width: 550px;
+    padding: 50px;
+    display: inline-block;
+}
+
+h1 {
+    font-family: "Montserrat-Italic-Variable";
+    font-size: 1.5rem;
+}
+
+
+.glidersDiv {
+    position: absolute;
+    background-color: #272f34;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    max-width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.glider {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gliderActive {
+    transition: 0.4s ease-in-out;
+    width: 30px;
+    background-color: #00FF75;
+}
+.gliderInactive {
+    transition: 0.4s ease-in-out;
+    width: 11px;
+    background-color: #b0b0b0;
+}
+
+#glider1 {
+    top: 4px;
+    left: 6px;
+}
+#glider2 {
+    top: 4px;
+    left: 41px;
+    
+}
+#glider3 {
+    top: 4px;
+    left: 56px;
+
+}
+
+.carouselPosition1 {
+    z-index: 3;
+    opacity: 100%;
+}
+.carouselPosition2 {
+    z-index: 2;
+    background-color: #c5a700;
+    left: 725px;
+}
+.carouselInactive {
+    display: none;
+}
+
+
+.down {
+    white-space: nowrap;
+}
+
+
+.dispose {
+    white-space: normal;
+    background-color: #ffd900;
+    width: 550px;
+    padding: 50px;
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.buttonActive {
+    background-color: #ff5252;
+}
+
+.buttonInactive {
+    background-color: #00FF75;
+}
+
+.active {
+    left: 50px;
+}

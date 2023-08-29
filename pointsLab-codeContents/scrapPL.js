@@ -1,19 +1,28 @@
-let myArray = [0, 1, 2, 3];
+const CARDS = document.querySelectorAll('.card');
+const BUTTONS = document.querySelectorAll('.button');
+const LEFT_BUTTON = document.getElementById('left')
+const RIGHT_BUTTON = document.getElementById('right')
 
-const left = document.getElementById('left');
-const right = document.getElementById('right');
+LEFT_BUTTON.addEventListener('click', (e) => {
+    leftWise();
+});
+RIGHT_BUTTON.addEventListener('click', (e) => {
+    rightWise();
+});
 
-left.addEventListener('click', (e)=>{
-    let lastElement = myArray[myArray.length - 1];
-    console.log('lastElement: ' + lastElement);
-    myArray.pop(lastElement);
-    myArray.unshift(lastElement);
-    console.log(myArray);
-});
-right.addEventListener('click', (e)=>{
-    let firstElement = myArray[0];
-    myArray.shift();
-    myArray.push(firstElement);
-    console.log(myArray);
-    console.log('firstElement: ' + firstElement);
-});
+
+leftWise = () => {
+    const LIST = document.querySelector(".cardsContainer");
+    const LAST_ELEMENT = LIST.lastElementChild;
+    const CLONE = LAST_ELEMENT.cloneNode(true);
+    LIST.prepend(CLONE);
+    LIST.removeChild(LAST_ELEMENT);
+}
+
+rightWise = () => {
+    const LIST = document.querySelector(".cardsContainer");
+    const FIRST_ELEMENT = LIST.firstElementChild;
+    const CLONE = FIRST_ELEMENT.cloneNode(true);
+    LIST.appendChild(CLONE);
+    LIST.removeChild(FIRST_ELEMENT);
+}

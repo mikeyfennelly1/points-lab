@@ -194,13 +194,9 @@
 }
 
 .heightAdjuster1 {
+  background-color: white;
   height: 69px;
   width: 100vw;
-}
-@media screen and (max-width: 897px) {
-  .heightAdjuster1 {
-    background-color: #fffdea;
-  }
 }
 
 button:hover {
@@ -381,6 +377,7 @@ button:hover {
 }
 
 .heightAdjuster2 {
+  background-color: white;
   display: flex;
   align-items: end;
   width: 100vw;
@@ -388,7 +385,6 @@ button:hover {
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {
-    background-color: #fffdea;
     height: 69vh;
   }
 }

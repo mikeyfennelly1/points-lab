@@ -205,11 +205,9 @@ body {
 }
 
 .heightAdjuster1 {
+    background-color: white;
     height: 69px;
     width: 100vw;
-    @media screen and (max-width: 897px) {
-        background-color: #fffdea;
-    }
 }
 
 button:hover {
@@ -368,13 +366,13 @@ button:hover {
 
     .heightAdjuster2 {
         // background-color: red;
+        background-color: white;
         display: flex;
         align-items: end;
         width: 100vw;
         height: 80vh; // this is adjusted in index.js regardless
         // border: 3px solid red;
         @media screen and (max-width: 897px) {
-            background-color: #fffdea;
             height: 69vh;
         }
         @media screen and (max-width: 700px) {

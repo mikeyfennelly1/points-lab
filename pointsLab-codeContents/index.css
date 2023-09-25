@@ -520,6 +520,11 @@ button:hover {
   z-index: 2;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .preContainer .container {
+    margin-bottom: 20px;
+  }
+}
 .preContainer .tab_box {
   padding-right: 50px;
   flex-direction: column;
@@ -635,6 +640,12 @@ button:hover {
 .cardsDesign {
   padding-top: 100px;
   background-color: #001319;
+  border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  .cardsDesign {
+    display: none;
+  }
 }
 .cardsDesign .titlesDiv {
   position: relative;
@@ -679,7 +690,6 @@ button:hover {
   margin-right: 30px;
   padding: 20px;
   border: 2px solid #D9D9D9;
-  border-radius: 30px;
 }
 .cardsDesign .cardCollection .cardContent h3 {
   font-family: "Source-Code-Pro-Variable";
@@ -763,20 +773,31 @@ button:hover {
 
 .fourthPageContainer {
   width: 100vw;
-  height: 300px;
+  height: 530px;
   background-color: #272f34;
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
 .fourthPageContainer .fourthPage {
+  display: grid;
   max-height: 600px;
+}
+@media screen and (max-width: 1090px) {
+  .fourthPageContainer .fourthPage {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .fourthPageContainer .fourthPage .lhs {
   max-height: 300px;
   width: 35%;
   left: calc(0.5 * (100vw - 1500px));
   padding-left: 30px;
+}
+@media screen and (max-width: 1090px) {
+  .fourthPageContainer .fourthPage .lhs {
+    width: 80%;
+  }
 }
 .fourthPageContainer .fourthPage .lhs h1 {
   font-family: "Merriweather";
@@ -786,6 +807,8 @@ button:hover {
 .fourthPageContainer .fourthPage .lhs p {
   font-family: "Montserrat-Variable";
   font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 .fourthPageContainer .fourthPage .lhs p span {
   color: #00FF75;
@@ -835,6 +858,11 @@ button:hover {
   max-height: 300px;
   overflow-x: auto;
   filter: drop-shadow(10px 10px black);
+}
+@media screen and (max-width: 1090px) {
+  .fourthPageContainer .fourthPage .rhs {
+    margin-top: 50px;
+  }
 }
 .fourthPageContainer .fourthPage .rhs .carousel {
   max-height: 300px;

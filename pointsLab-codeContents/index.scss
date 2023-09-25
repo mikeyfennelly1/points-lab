@@ -511,6 +511,9 @@ button:hover {
         background-color: transparent;
         margin: 20px;
         max-height: 700px;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 30px;
+        }
     }
     .active {
         color: $primaryTeal;
@@ -524,6 +527,9 @@ button:hover {
         padding-bottom: 30px;
         line-height: 30px;
         font-size: 1.2rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
     }    
     .contentActive{
          display: block;

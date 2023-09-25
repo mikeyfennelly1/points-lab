@@ -287,8 +287,29 @@ button:hover {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .mainLandingContent .contentContainer .contentLeft .landingTitle h5 {
+    font-size: 1rem;
+    line-height: 2;
+    padding-right: 20px;
+  }
+}
 .mainLandingContent .contentContainer .contentLeft .tryORlogin {
   padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin {
+    margin-bottom: 50px;
+    padding-left: 0px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .button {
   max-width: -moz-fit-content;
@@ -306,17 +327,24 @@ button:hover {
   filter: drop-shadow(3px 3px #000000);
 }
 @media screen and (max-width: 768px) {
-  .mainLandingContent .contentContainer .contentLeft .tryORlogin {
-    min-width: 100%;
-    max-width: 100%;
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin .button {
+    max-width: none;
+    width: calc(100vw - 40px);
+    margin-bottom: 30px;
+    margin-right: 0px;
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
   padding-left: 30px;
   font-family: "Montserrat-Variable";
   font-weight: 800;
-  color: #000;
+  color: #009B6C;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
+    padding-left: 0px;
+  }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin a:hover {
   color: #009B6C;
@@ -336,15 +364,22 @@ button:hover {
   border-bottom: 1px solid rgb(135, 135, 135);
   border-top: 1px solid rgb(135, 135, 135);
 }
-@media screen and (max-width: 897px) {
+@media screen and (max-width: 768px) {
   .mainLandingContent .contentContainer .contentLeft .fourItems {
     background-color: #001319;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 897px) {
   .mainLandingContent .contentContainer .contentLeft .fourItems {
     background-color: transparent;
     padding-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .fourItems .item {
+    padding-bottom: 20px;
   }
 }
 .mainLandingContent .contentContainer .contentLeft .fourItems h3 {
@@ -402,6 +437,11 @@ button:hover {
 @media screen and (max-width: 700px) {
   .heightAdjuster2 {
     height: 66vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heightAdjuster2 {
+    height: 100vh;
   }
 }
 
@@ -467,6 +507,7 @@ button:hover {
 }
 
 .preContainer {
+  padding-top: 50px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -530,6 +571,17 @@ button:hover {
   top: 100vh;
 }
 
+@media (max-width: 500px) {
+  .bbsfs {
+    top: 17vh;
+  }
+  .bbsfs h1 {
+    font-size: 2.5rem;
+  }
+  .bbsfs h2 {
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 1520px) {
   .bbsfs {
     left: 0;

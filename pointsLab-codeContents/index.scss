@@ -742,6 +742,7 @@ button:hover {
     display: flex;
     justify-content: center;
     padding-top: 100px;
+    padding-bottom: 50px;
     .fourthPage {
         display: grid;
         max-height: 600px;
@@ -812,21 +813,28 @@ button:hover {
             }
         }
         .rhs {
-            display: block;
+            display: flex;
+            flex-wrap: nowrap;
             padding-left: 50px;
             max-height: 300px;
             overflow-x: auto;
+            overflow-x: scroll;
             @media screen and (max-width: 1090px) {
                 margin-top: 50px;
             }
             filter: drop-shadow(10px 10px black);
             .carousel {
+                margin-right: 20px;
                 max-height: 300px;
                 padding: 50px;
                 background-color: #ffd900;
                 overflow-x: visible;
                 height: 80px;
                 display: inline-block;
+                min-width: 500px;
+                @media screen and (max-width: 1090px) {
+                    padding-bottom: 80px;
+                }
                 h1 {
                     color: #000000;
                     font-family: 'Montserrat-Italic-Variable';

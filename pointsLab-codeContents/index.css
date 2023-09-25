@@ -1,6 +1,7 @@
 .Layer_1 {
+  display: block;
   position: absolute;
-  z-index: -2;
+  z-index: 0;
   top: 50vh;
   width: 100vw;
 }
@@ -125,7 +126,7 @@
 }
 
 .topnav {
-  background-color: #fffdea;
+  background-color: white;
   position: fixed;
   margin: 30px;
   z-index: 5;
@@ -226,6 +227,11 @@ button:hover {
     width: 100vw;
   }
 }
+@media screen and (max-width: 500px) {
+  .mainLandingContent .contentContainer .contentLeft {
+    padding-top: 88px;
+  }
+}
 .mainLandingContent .contentContainer .contentLeft .landingTitle {
   padding-left: 20px;
   background-color: transparent;
@@ -242,6 +248,11 @@ button:hover {
 @media screen and (max-width: 700px) {
   .mainLandingContent .contentContainer .contentLeft .landingTitle h1 {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainLandingContent .contentContainer .contentLeft .landingTitle h1 {
+    font-size: 3rem;
   }
 }
 .mainLandingContent .contentContainer .contentLeft .landingTitle #results {

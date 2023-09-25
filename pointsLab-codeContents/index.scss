@@ -7,8 +7,9 @@ $primaryYellow: #FFE600;
 
 
 .Layer_1 {
+    display: block;
     position: absolute;
-    z-index: -2;
+    z-index: 0;
     top: 50vh;
     width: 100vw;
 }
@@ -140,7 +141,7 @@ body {
 }
 
 .topnav {
-    background-color: #fffdea;
+    background-color: white;
     position: fixed;
     margin: 30px;
     z-index: 5;
@@ -232,6 +233,9 @@ button:hover {
             @media screen and (max-width: 897px) {
                 width: 100vw;
             }
+            @media screen and (max-width: 500px) {
+                padding-top: 88px;
+            }
             .landingTitle {
                 padding-left: 20px;
                 background-color: transparent;
@@ -242,6 +246,9 @@ button:hover {
                     @include textToggle(rgb(24, 24, 24), 5rem);
                     @media screen and (max-width: 700px) {
                         font-size: 4rem;
+                    }
+                    @media screen and (max-width: 500px) {
+                        font-size: 3rem;
                     }
                 }
                 #results {

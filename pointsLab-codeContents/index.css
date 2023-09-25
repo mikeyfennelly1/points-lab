@@ -543,6 +543,11 @@ button:hover {
   margin: 20px;
   max-height: 700px;
 }
+@media screen and (max-width: 768px) {
+  .preContainer .tutorialScreen {
+    padding-bottom: 30px;
+  }
+}
 .preContainer .active {
   color: #00FF75;
 }
@@ -555,6 +560,11 @@ button:hover {
   padding-bottom: 30px;
   line-height: 30px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .preContainer .content {
+    font-size: 1rem;
+  }
 }
 .preContainer .contentActive {
   display: block;

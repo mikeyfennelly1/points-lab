@@ -679,6 +679,11 @@ button:hover {
             width: 40%;
             max-height: 600px;
             padding-left: 50px;
+            @media screen and (max-width: 1334px) {
+                padding-right: 50px;
+                padding-top: 0px;
+                width: 100%;
+            }
             .acquire {
                 color: beige;
                 font-size: 2rem;
@@ -696,21 +701,36 @@ button:hover {
                 font-family: 'Montserrat-Variable';
                 font-weight: 300;
                 padding-top: 20px;
+                line-height: 1.5;
             }
-            .viewPlans {
-                max-width: fit-content;
-                background-color: $primaryYellow;
-                border-radius: 5px;
-                border: 2px solid rgb(12, 12, 12);
-                padding: 15px;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin-right: 20px;
-                margin-top: 50px;
-                margin-bottom: 80px;
-                color: black;
-                filter: drop-shadow(3px 3px #000000);
-                cursor: pointer;
+            .twoItems {
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .viewPlans {
+                    max-width: fit-content;
+                    background-color: $primaryYellow;
+                    border-radius: 5px;
+                    border: 2px solid rgb(12, 12, 12);
+                    padding: 15px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-right: 20px;
+                    margin-top: 50px;
+                    margin-bottom: 80px;
+                    color: black;
+                    filter: drop-shadow(3px 3px #000000);
+                    cursor: pointer;
+                    @media screen and (max-width: 768px) {
+                        margin-right: 0px;
+                        min-width: 100%;
+                        margin: 30px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+                }
             }
             .viewPlans:hover {
                     transition: 0.1s ease-in-out;
@@ -725,10 +745,13 @@ button:hover {
             .link {
                 color: beige;
                 text-decoration: none;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
             }
         }
         .right {
-            background-color: #fffdea;
+            background-color: white;
             height: 600px;
             width: 750px;
         }

@@ -717,6 +717,13 @@ button:hover {
   max-height: 600px;
   padding-left: 50px;
 }
+@media screen and (max-width: 1334px) {
+  .thirdPageContainer .thirdPage .left {
+    padding-right: 50px;
+    padding-top: 0px;
+    width: 100%;
+  }
+}
 .thirdPageContainer .thirdPage .left .acquire {
   color: beige;
   font-size: 2rem;
@@ -734,8 +741,16 @@ button:hover {
   font-family: "Montserrat-Variable";
   font-weight: 300;
   padding-top: 20px;
+  line-height: 1.5;
 }
-.thirdPageContainer .thirdPage .left .viewPlans {
+@media screen and (max-width: 768px) {
+  .thirdPageContainer .thirdPage .left .twoItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.thirdPageContainer .thirdPage .left .twoItems .viewPlans {
   max-width: -moz-fit-content;
   max-width: fit-content;
   background-color: #FFE600;
@@ -751,6 +766,15 @@ button:hover {
   filter: drop-shadow(3px 3px #000000);
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .thirdPageContainer .thirdPage .left .twoItems .viewPlans {
+    margin-right: 0px;
+    min-width: 100%;
+    margin: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 .thirdPageContainer .thirdPage .left .viewPlans:hover {
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -765,8 +789,13 @@ button:hover {
   color: beige;
   text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .thirdPageContainer .thirdPage .left .link {
+    margin-bottom: 30px;
+  }
+}
 .thirdPageContainer .thirdPage .right {
-  background-color: #fffdea;
+  background-color: white;
   height: 600px;
   width: 750px;
 }

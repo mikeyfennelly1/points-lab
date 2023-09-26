@@ -103,6 +103,7 @@ $primaryYellow: #FFE600;
     color: white;
 }
 body {
+    background-color: #001319;
     @media screen and (max-width: 700px) {
         background-color: #001319;
     }
@@ -546,6 +547,9 @@ button:hover {
     .contentInactive {
         display: none; 
     }
+    // img {
+    //     filter: drop-shadow(10px 10px 5px #00000039);
+    // }
 }
 
 .traceLine {
@@ -616,7 +620,6 @@ button:hover {
 .cardsDesign{
     padding-top: 100px;
     background-color: #001319;
-    border-radius: 30px;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -854,7 +857,8 @@ button:hover {
             filter: drop-shadow(10px 10px black);
             .carousel {
                 margin-right: 20px;
-                max-height: 300px;
+                min-height: 135px;
+                max-height: 135px;
                 padding: 50px;
                 background-color: #ffd900;
                 overflow-x: visible;
@@ -939,6 +943,7 @@ button:hover {
         padding-bottom: 30px;
     }
     .bottomNavContainer {
+        overflow: hidden;
         height: 113px;
         display: grid;
         grid-template-columns: auto auto auto auto;

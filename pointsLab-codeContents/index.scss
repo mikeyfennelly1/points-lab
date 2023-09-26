@@ -16,46 +16,7 @@ $primaryYellow: #FFE600;
      display: none;   
     }
 }
-// @media screen and (max-width: 2220px) {
-//     .Layer_1 {
-//         top: 30vh;
-//     }
-// }
-// @media screen and (max-width: 1980px) {
-//     .Layer_1 {
-//         top: 48vh;
-//     }
-// }
-// @media screen and (max-width: 1780px) {
-//     .Layer_1 {
-//         top: 52vh;
-//     }
-// }
-// @media screen and (max-width: 1680px) {
-//     .Layer_1 {
-//         top: 55vh;
-//     }
-// }
-// @media screen and (max-width: 1580px) {
-//     .Layer_1 {
-//         top: 57vh;
-//     }
-// }
-// @media screen and (max-width: 1380px) {
-//     .Layer_1 {
-//         top: 62vh;
-//     }
-// }
-// @media screen and (max-width: 1270px) {
-//     .Layer_1 {
-//         top: 67vh;
-//     }
-// }
-// @media screen and (max-width: 897px) {
-//     .Layer_1 {
-//         display: none;
-//     }
-// }
+
 @media screen and (max-width: 897px) {
     body {
         background-color: #001319;
@@ -526,7 +487,7 @@ button:hover {
         }
     }
     .active {
-        color: $primaryTeal;
+        color: #00FF75;
     }    
     .inactive {
         color: $tertiaryGrey;
@@ -679,14 +640,14 @@ button:hover {
     padding-bottom: 100px;
     background-color: #001319;
     .thirdPage {
-        display: grid;
+        position: relative;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         .left {
             padding-top: 50px;
-            width: 40%;
-            max-height: 600px;
+            min-width: 1500px;
+            min-height: 700px;
             padding-left: 50px;
             @media screen and (max-width: 1334px) {
                 padding-right: 50px;
@@ -760,9 +721,29 @@ button:hover {
             }
         }
         .right {
-            background-color: white;
-            height: 600px;
-            width: 750px;
+            img {
+                position: absolute;
+                top: 20px;
+                left: 60%;
+                max-height: 650px;
+                border-radius: 20px;
+                transition: 0.25s ease-in-out;
+            }
+            .One:hover {
+                transition: 0.25s ease-in-out;
+                transform: translate(-60px, -5px) rotate(-3deg);
+                filter: drop-shadow(2px 4px 6px black);
+                cursor: pointer;
+            }
+            .One:hover+.Two {
+                transition: 0.25s ease-in-out;
+                filter: drop-shadow(2px 4px 6px black);
+                transform: translate(67px, 10px);
+            }
+            .One:hover+.Three {
+                transition: 0.25s ease-in-out;
+                transform: translate(92px, 10px) rotate(10deg);
+            }
         }
     }
 }
@@ -850,7 +831,6 @@ button:hover {
             padding-left: 50px;
             max-height: 300px;
             overflow-x: auto;
-            overflow-x: scroll;
             @media screen and (max-width: 1090px) {
                 margin-top: 50px;
             }

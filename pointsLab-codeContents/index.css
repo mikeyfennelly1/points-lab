@@ -677,15 +677,15 @@ button:hover {
   background-color: #001319;
 }
 .thirdPageContainer .thirdPage {
-  display: grid;
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .thirdPageContainer .thirdPage .left {
   padding-top: 50px;
-  width: 40%;
-  max-height: 600px;
+  min-width: 1500px;
+  min-height: 700px;
   padding-left: 50px;
 }
 @media screen and (max-width: 1334px) {
@@ -765,10 +765,28 @@ button:hover {
     margin-bottom: 30px;
   }
 }
-.thirdPageContainer .thirdPage .right {
-  background-color: white;
-  height: 600px;
-  width: 750px;
+.thirdPageContainer .thirdPage .right img {
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  max-height: 650px;
+  border-radius: 20px;
+  transition: 0.25s ease-in-out;
+}
+.thirdPageContainer .thirdPage .right .One:hover {
+  transition: 0.25s ease-in-out;
+  transform: translate(-60px, -5px) rotate(-3deg);
+  filter: drop-shadow(2px 4px 6px black);
+  cursor: pointer;
+}
+.thirdPageContainer .thirdPage .right .One:hover + .Two {
+  transition: 0.25s ease-in-out;
+  filter: drop-shadow(2px 4px 6px black);
+  transform: translate(67px, 10px);
+}
+.thirdPageContainer .thirdPage .right .One:hover + .Three {
+  transition: 0.25s ease-in-out;
+  transform: translate(92px, 10px) rotate(10deg);
 }
 
 .fourthPageContainer {
@@ -859,7 +877,6 @@ button:hover {
   padding-left: 50px;
   max-height: 300px;
   overflow-x: auto;
-  overflow-x: scroll;
   filter: drop-shadow(10px 10px black);
 }
 @media screen and (max-width: 1090px) {

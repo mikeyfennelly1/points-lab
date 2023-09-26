@@ -2,50 +2,15 @@
   display: block;
   position: absolute;
   z-index: 0;
-  top: 50vh;
+  top: 600px;
   width: 100vw;
-}
-
-@media screen and (max-width: 2220px) {
-  .Layer_1 {
-    top: 30vh;
-  }
-}
-@media screen and (max-width: 1980px) {
-  .Layer_1 {
-    top: 48vh;
-  }
-}
-@media screen and (max-width: 1780px) {
-  .Layer_1 {
-    top: 52vh;
-  }
-}
-@media screen and (max-width: 1680px) {
-  .Layer_1 {
-    top: 55vh;
-  }
-}
-@media screen and (max-width: 1580px) {
-  .Layer_1 {
-    top: 57vh;
-  }
-}
-@media screen and (max-width: 1380px) {
-  .Layer_1 {
-    top: 62vh;
-  }
-}
-@media screen and (max-width: 1270px) {
-  .Layer_1 {
-    top: 67vh;
-  }
 }
 @media screen and (max-width: 897px) {
   .Layer_1 {
     display: none;
   }
 }
+
 @media screen and (max-width: 897px) {
   body {
     background-color: #001319;
@@ -56,31 +21,31 @@
 }
 
 @font-face {
-  src: url(Montserrat-VariableFont_wght.ttf);
+  src: url(./Montserrat-VariableFont_wght.ttf);
   font-family: "Montserrat-Variable";
 }
 @font-face {
-  src: url(Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(./Montserrat-Italic-VariableFont_wght.ttf);
   font-family: "Montserrat-Italic-Variable";
 }
 @font-face {
-  src: url(Merriweather-Regular.ttf);
+  src: url(./Merriweather-Regular.ttf);
   font-family: "Merriweather";
 }
 @font-face {
-  src: url(Merriweather-Italic.ttf);
+  src: url(./Merriweather-Italic.ttf);
   font-family: "Merriweather-Italic";
 }
 @font-face {
-  src: url(Merriweather-Light.ttf);
+  src: url(./Merriweather-Light.ttf);
   font-family: "Merriweather-Light";
 }
 @font-face {
-  src: url(Merriweather-Bold.ttf);
+  src: url(./Merriweather-Bold.ttf);
   font-family: "Merriweather-Bold";
 }
 @font-face {
-  src: url(SourceCodePro-VariableFont_wght.ttf);
+  src: url(./SourceCodePro-VariableFont_wght.ttf);
   font-family: "Source-Code-Pro-Variable";
 }
 * {
@@ -301,7 +266,9 @@ button:hover {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin {
     margin-bottom: 50px;
     padding-left: 0px;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 500px) {
@@ -431,7 +398,7 @@ button:hover {
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {
-    height: 69vh;
+    height: 995px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -441,7 +408,7 @@ button:hover {
 }
 @media screen and (max-width: 500px) {
   .heightAdjuster2 {
-    height: 100vh;
+    height: 660px;
   }
 }
 
@@ -513,6 +480,7 @@ button:hover {
   justify-content: center;
 }
 .preContainer .container {
+  background-color: #001319;
   max-width: 1500px;
   justify-content: center;
   display: flex;
@@ -550,6 +518,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .preContainer .tutorialScreen {
+    margin-top: 60px;
     padding-bottom: 30px;
   }
 }
@@ -588,7 +557,7 @@ button:hover {
 
 @media (max-width: 500px) {
   .bbsfs {
-    top: 17vh;
+    top: 135px;
   }
   .bbsfs h1 {
     font-size: 2.5rem;
@@ -966,6 +935,13 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .bottomNavigation {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
 .bottomNavigation .bottomNavContainer {
   height: 113px;
   display: grid;
@@ -974,6 +950,18 @@ button:hover {
   width: 1000px;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .bottomNavigation .bottomNavContainer {
+    grid-template-columns: repeat(2, 1fr);
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bottomNavigation .bottomNavContainer div {
+    padding-bottom: 30px;
+  }
 }
 .bottomNavigation .bottomNavContainer .logoContainer .logo {
   padding-bottom: 57px;

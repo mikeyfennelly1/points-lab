@@ -10,50 +10,52 @@ $primaryYellow: #FFE600;
     display: block;
     position: absolute;
     z-index: 0;
-    top: 50vh;
+    top: 600px;
     width: 100vw;
-}
-
-@media screen and (max-width: 2220px) {
-    .Layer_1 {
-        top: 30vh;
+    @media screen and (max-width: 897px) {
+     display: none;   
     }
 }
-@media screen and (max-width: 1980px) {
-    .Layer_1 {
-        top: 48vh;
-    }
-}
-@media screen and (max-width: 1780px) {
-    .Layer_1 {
-        top: 52vh;
-    }
-}
-@media screen and (max-width: 1680px) {
-    .Layer_1 {
-        top: 55vh;
-    }
-}
-@media screen and (max-width: 1580px) {
-    .Layer_1 {
-        top: 57vh;
-    }
-}
-@media screen and (max-width: 1380px) {
-    .Layer_1 {
-        top: 62vh;
-    }
-}
-@media screen and (max-width: 1270px) {
-    .Layer_1 {
-        top: 67vh;
-    }
-}
-@media screen and (max-width: 897px) {
-    .Layer_1 {
-        display: none;
-    }
-}
+// @media screen and (max-width: 2220px) {
+//     .Layer_1 {
+//         top: 30vh;
+//     }
+// }
+// @media screen and (max-width: 1980px) {
+//     .Layer_1 {
+//         top: 48vh;
+//     }
+// }
+// @media screen and (max-width: 1780px) {
+//     .Layer_1 {
+//         top: 52vh;
+//     }
+// }
+// @media screen and (max-width: 1680px) {
+//     .Layer_1 {
+//         top: 55vh;
+//     }
+// }
+// @media screen and (max-width: 1580px) {
+//     .Layer_1 {
+//         top: 57vh;
+//     }
+// }
+// @media screen and (max-width: 1380px) {
+//     .Layer_1 {
+//         top: 62vh;
+//     }
+// }
+// @media screen and (max-width: 1270px) {
+//     .Layer_1 {
+//         top: 67vh;
+//     }
+// }
+// @media screen and (max-width: 897px) {
+//     .Layer_1 {
+//         display: none;
+//     }
+// }
 @media screen and (max-width: 897px) {
     body {
         background-color: #001319;
@@ -64,31 +66,31 @@ $primaryYellow: #FFE600;
     min-width: 100px;
 }
 @font-face {
-    src: url(Montserrat-VariableFont_wght.ttf);
+    src: url(./Montserrat-VariableFont_wght.ttf);
     font-family: "Montserrat-Variable";
 }
 @font-face {
-    src: url(Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(./Montserrat-Italic-VariableFont_wght.ttf);
     font-family: "Montserrat-Italic-Variable";
 }
 @font-face {
-    src: url(Merriweather-Regular.ttf);
+    src: url(./Merriweather-Regular.ttf);
     font-family: "Merriweather";
 }
 @font-face {
-    src: url(Merriweather-Italic.ttf);
+    src: url(./Merriweather-Italic.ttf);
     font-family: "Merriweather-Italic";
 }
 @font-face {
-    src: url(Merriweather-Light.ttf);
+    src: url(./Merriweather-Light.ttf);
     font-family: "Merriweather-Light";
 }
 @font-face {
-    src: url(Merriweather-Bold.ttf);
+    src: url(./Merriweather-Bold.ttf);
     font-family: "Merriweather-Bold";
 }
 @font-face {
-    src: url(SourceCodePro-VariableFont_wght.ttf);
+    src: url(./SourceCodePro-VariableFont_wght.ttf);
     font-family: "Source-Code-Pro-Variable";
 }
 
@@ -288,7 +290,9 @@ button:hover {
                     @media screen and (max-width: 768px) {
                         margin-bottom: 50px;
                         padding-left: 0px;
+                        display: flex;
                         justify-content: center;
+                        flex-wrap: wrap;
                     }
                     @media screen and (max-width: 500px) {
                         display: flex;
@@ -407,13 +411,13 @@ button:hover {
         height: 80vh; // this is adjusted in index.js regardless
         // border: 3px solid red;
         @media screen and (max-width: 897px) {
-            height: 69vh;
+            height: 995px;
         }
         @media screen and (max-width: 700px) {
             height: 66vh;
         }
         @media screen and (max-width: 500px) {
-            height: 100vh;
+            height: 660px;
         }
     }
 
@@ -482,6 +486,7 @@ button:hover {
     display: flex;
     justify-content: center;
     .container {
+        background-color: #001319;
         max-width: 1500px;
         justify-content: center;
         display: flex;
@@ -515,6 +520,7 @@ button:hover {
         margin: 20px;
         max-height: 700px;
         @media screen and (max-width: 768px) {
+            margin-top: 60px;
             padding-bottom: 30px;
         }
     }
@@ -552,7 +558,7 @@ button:hover {
 
 @media (max-width: 500px) {
     .bbsfs {
-        top: 17vh;
+        top: 135px;
         h1 {
             font-size: 2.5rem;
         }
@@ -927,6 +933,11 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
     .bottomNavContainer {
         height: 113px;
         display: grid;
@@ -935,6 +946,15 @@ button:hover {
         width: 1000px;
         position: relative;
         z-index: 2;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            height: fit-content;
+        }
+        div {
+            @media screen and (max-width: 768px) {
+                padding-bottom: 30px;
+            }
+        }
         .logoContainer {
             .logo {
                 padding-bottom: 57px;

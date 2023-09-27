@@ -391,6 +391,12 @@ button:hover {
     padding-bottom: 30px;
   }
 }
+@media screen and (max-width: 897px) {
+  .mainLandingContent .contentContainer .contentLeft .fourItems {
+    background-color: #001319;
+    padding-left: 20px;
+  }
+}
 @media screen and (min-width: 897px) {
   .mainLandingContent .contentContainer .contentLeft .fourItems {
     background-color: transparent;
@@ -451,12 +457,17 @@ button:hover {
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {
-    height: 995px;
+    height: 908px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heightAdjuster2 {
+    height: 996px;
   }
 }
 @media screen and (max-width: 700px) {
   .heightAdjuster2 {
-    height: 66vh;
+    height: 63vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -527,7 +538,6 @@ button:hover {
 }
 
 .preContainer {
-  padding-top: 50px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -623,6 +633,16 @@ button:hover {
 @media (max-width: 1520px) {
   .bbsfs {
     left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .bbsfs {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .bbsfs {
+    padding-bottom: 140px;
   }
 }
 @media (min-width: 1000px) {

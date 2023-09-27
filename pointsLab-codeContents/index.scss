@@ -12,6 +12,9 @@ $primaryYellow: #FFE600;
     z-index: 0;
     top: 600px;
     width: 100vw;
+    @media screen and (max-width: 1476px) {
+     top: 700px;
+    }
     @media screen and (max-width: 897px) {
      display: none;   
     }
@@ -292,6 +295,8 @@ button:hover {
                     margin-right: 20px;
                     @media screen and (max-width: 768px) {
                         padding-left: 0px;
+                        padding-right: 0px;
+                        margin-right: 0px;
                     }
                 }
                 .arrow {
@@ -310,13 +315,20 @@ button:hover {
                     position: absolute;
                     top: 73px;
                     left: 295px;
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
                 .arrow {
+                    fill: none;
                     transition: ease-in-out;
                     position: absolute;
                     stroke: #009B6C;
                     stroke-linecap: round;
                     stroke-width: 10px;
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
                 .login:hover+.arrowLine {
                     transition: 0.25s ease-in-out;

@@ -5,6 +5,11 @@
   top: 600px;
   width: 100vw;
 }
+@media screen and (max-width: 1476px) {
+  .Layer_1 {
+    top: 700px;
+  }
+}
 @media screen and (max-width: 897px) {
   .Layer_1 {
     display: none;
@@ -317,6 +322,8 @@ button:hover {
 @media screen and (max-width: 768px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
     padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
@@ -336,12 +343,23 @@ button:hover {
   top: 73px;
   left: 295px;
 }
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrowLine {
+    display: none;
+  }
+}
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
+  fill: none;
   transition: ease-in-out;
   position: absolute;
   stroke: #009B6C;
   stroke-linecap: round;
   stroke-width: 10px;
+}
+@media screen and (max-width: 768px) {
+  .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
+    display: none;
+  }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .login:hover + .arrowLine {
   transition: 0.25s ease-in-out;

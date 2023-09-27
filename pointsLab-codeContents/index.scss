@@ -497,6 +497,9 @@ button:hover {
     background-color: transparent;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1586px) {
+        padding-bottom: 75px;
+    }
     .container {
         background-color: #001319;
         max-width: 1500px;
@@ -642,7 +645,7 @@ button:hover {
 .cardsDesign{
     padding-top: 100px;
     background-color: #001319;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1586px) {
         display: none;
     }
     .titlesDiv {
@@ -700,6 +703,9 @@ button:hover {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #001319;
+    @media screen and (max-width: 900px) {
+        min-height: 1200px;
+    }
     .thirdPage {
         position: relative;
         display: flex;
@@ -713,6 +719,7 @@ button:hover {
             @media screen and (max-width: 1334px) {
                 padding-right: 50px;
                 padding-top: 0px;
+                max-width: 100vw;
                 width: 100%;
             }
             .acquire {
@@ -724,6 +731,13 @@ button:hover {
                     font-family: 'Merriweather';
                     color: #00ff6e;
                 }
+                @media screen and (max-width: 1287px) {
+                    max-width: 40%;
+                }
+                @media screen and (max-width: 600px) {
+                    max-width: calc(100vw - 100px);
+                    padding-right: 30px;
+                }
             }
             p {
                 max-width: 600px;
@@ -733,15 +747,24 @@ button:hover {
                 font-weight: 300;
                 padding-top: 20px;
                 line-height: 1.5;
+                @media screen and (max-width: 1287px) {
+                    max-width: 30%;
+                }
+                @media screen and (max-width: 600px) {
+                    max-width: calc(100vw - 100px);
+                    padding-right: 30px;
+                }
             }
             .twoItems {
                 @media screen and (max-width: 768px) {
                     display: flex;
+                    max-width: calc(100vw - 100px);
                     flex-wrap: wrap;
                     justify-content: center;
+                    
                 }
                 .viewPlans {
-                    max-width: fit-content;
+                    max-width: 100%;
                     background-color: $primaryYellow;
                     border-radius: 5px;
                     border: 2px solid rgb(12, 12, 12);
@@ -782,6 +805,9 @@ button:hover {
             }
         }
         .right {
+            @media screen and (max-width: 550px) {
+                position: static;
+            }
             img {
                 position: absolute;
                 top: 20px;
@@ -789,6 +815,43 @@ button:hover {
                 max-height: 650px;
                 border-radius: 20px;
                 transition: 0.25s ease-in-out;
+                @media screen and (max-width: 900px) {
+                    top: 400px;
+                    left: 20%;
+                }
+                @media screen and (max-width: 650px) {
+                    top: 400px;
+                    left: 15%;
+                }
+                @media screen and (max-width: 550px) {
+                    top: 445px;
+                    left: 50px;
+                    max-width: calc(100vw - 100px);
+                    min-width: calc(100vw - 100px);
+                }
+                @media screen and (max-width: 509px) {
+                    top: 485px;
+                    left: 50px;
+                    max-width: calc(100vw - 100px);
+                }
+                @media screen and (max-width: 489px) {
+                    top: 500px;
+                }
+                @media screen and (max-width: 453px) {
+                    top: 496px;
+                }
+                @media screen and (max-width: 426px) {
+                    top: 525px;
+                }
+                @media screen and (max-width: 400px) {
+                    top: 564px;
+                }
+                @media screen and (max-width: 377px) {
+                    top: 608px;
+                }
+                @media screen and (max-width: 373px) {
+                    top: 608px;
+                }
             }
             .One:hover {
                 transition: 0.25s ease-in-out;
@@ -811,6 +874,8 @@ button:hover {
 
 .fourthPageContainer {
     width: 100vw;
+    position: relative;
+    z-index: 4;
     height: 530px;
     background-color: #272f34;
     display: flex;
@@ -818,18 +883,23 @@ button:hover {
     padding-top: 100px;
     padding-bottom: 50px;
     .fourthPage {
+        margin-left: calc(0.5*(100vw - 1500px));
         display: grid;
         max-height: 600px;
+        grid-template-columns: repeat(2, 1fr);
         @media screen and (max-width: 1090px) {
             grid-template-columns: repeat(1, 1fr);
         }
         .lhs {
+            padding-right: 100px;
+            display: inline;
             max-height: 300px;
-            width: 35%;
+            width: 80%;
             left: calc(0.5*(100vw - 1500px));
             padding-left: 30px;
             @media screen and (max-width: 1090px) {
                 width: 80%;
+                width: 40%;
             }
             h1 {
                 font-family: 'Merriweather';

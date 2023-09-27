@@ -248,6 +248,7 @@ button:hover {
             }
                 
                 .tryORlogin {
+                    position: relative;
                     padding-left: 20px;
                     @media screen and (max-width: 768px) {
                         margin-bottom: 50px;
@@ -283,16 +284,47 @@ button:hover {
                 }
                 a {
                     padding-left: 30px;
+                    padding-right: 20px;
                     font-family: 'Montserrat-Variable';
                     font-weight: 800;
                     color: #009B6C;
                     text-decoration: none;
+                    margin-right: 20px;
                     @media screen and (max-width: 768px) {
                         padding-left: 0px;
                     }
                 }
-                a:hover {
-                    color: #009B6C;
+                .arrow {
+                    position: absolute;
+                    max-width: 60px;
+                    z-index: -1;
+                    top: 67px;
+                    left: 277px;
+                }
+                .arrowLine {
+                    transition: ease-in-out;
+                    padding-left: 20px;
+                    border-top: 3px solid #009B6C;
+                    padding-right: 20px;
+                    display: inline;
+                    position: absolute;
+                    top: 73px;
+                    left: 295px;
+                }
+                .arrow {
+                    transition: ease-in-out;
+                    position: absolute;
+                    stroke: #009B6C;
+                    stroke-linecap: round;
+                    stroke-width: 10px;
+                }
+                .login:hover+.arrowLine {
+                    transition: 0.25s ease-in-out;
+                    padding-right: 40px;
+                    +.arrow {
+                        transition: 0.25s ease-in-out;
+                        transform: translateX(20px);
+                    }
                 }
             }
             .button:hover {
@@ -481,6 +513,7 @@ button:hover {
         background-color: transparent;
         margin: 20px;
         max-height: 700px;
+        filter: drop-shadow(4px 4px 4px #00000086);
         @media screen and (max-width: 768px) {
             margin-top: 60px;
             padding-bottom: 30px;
@@ -734,15 +767,15 @@ button:hover {
                 transform: translate(-60px, -5px) rotate(-3deg);
                 filter: drop-shadow(2px 4px 6px black);
                 cursor: pointer;
-            }
-            .One:hover+.Two {
-                transition: 0.25s ease-in-out;
-                filter: drop-shadow(2px 4px 6px black);
-                transform: translate(67px, 10px);
-            }
-            .One:hover+.Three {
-                transition: 0.25s ease-in-out;
-                transform: translate(92px, 10px) rotate(10deg);
+                +.Two {
+                    transition: 0.25s ease-in-out;
+                    filter: drop-shadow(2px 4px 6px black);
+                    transform: translate(67px, 10px);
+                }
+                +.Three {
+                    transition: 0.25s ease-in-out;
+                    transform: translate(92px, 10px) rotate(10deg);
+                }
             }
         }
     }

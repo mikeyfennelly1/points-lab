@@ -175,6 +175,7 @@ body {
     .burgerMenu {
         display: block;
         max-height: 30px;
+        cursor: pointer;
         @media screen and (min-width: 800px) {
             display: none;
         }
@@ -182,6 +183,7 @@ body {
     .x {
         display: none;
         max-height: 30px;
+        cursor: pointer;
         @media screen and (min-width: 800px) {
             display: none;
         }
@@ -209,6 +211,7 @@ button:hover {
     width: 100vw;
     background-color: #00000080;
     z-index: 9;
+    pointer-events: none;
 }
 .tintBackgroundInactive {
     position: absolute;
@@ -344,7 +347,7 @@ button:hover {
                 .tryORlogin {
                     position: relative;
                     padding-left: 20px;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 800px) {
                         margin-bottom: 50px;
                         padding-left: 0px;
                         display: flex;
@@ -369,7 +372,7 @@ button:hover {
                         margin-bottom: 80px;
                         color: black;
                     filter: drop-shadow(3px 3px #000000);
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 800px) {
                         max-width: none;
                         width: calc(100vw - 40px);
                         margin-bottom: 30px;
@@ -384,7 +387,7 @@ button:hover {
                     color: #009B6C;
                     text-decoration: none;
                     margin-right: 20px;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 800px) {
                         padding-left: 0px;
                         padding-right: 0px;
                         margin-right: 0px;
@@ -399,7 +402,7 @@ button:hover {
                     position: absolute;
                     top: 73px;
                     left: 295px;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 800px) {
                         display: none;
                     }
                 }
@@ -508,6 +511,7 @@ button:hover {
         align-items: end;
         width: 100vw;
         height: 80vh; // this is adjusted in index.js regardless
+        min-height: 1000px;
         // border: 3px solid red;
         @media screen and (max-width: 897px) {
             height: 908px;

@@ -756,10 +756,37 @@ button:hover {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #001319;
+  overflow: hidden;
 }
 @media screen and (max-width: 900px) {
   .thirdPageContainer {
     min-height: 1200px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .thirdPageContainer {
+    min-height: 1150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .thirdPageContainer {
+    min-height: 1100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .thirdPageContainer {
+    min-height: 1050px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .thirdPageContainer {
+    min-height: 1000px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .thirdPageContainer {
+    min-height: 1050px;
   }
 }
 .thirdPageContainer .thirdPage {
@@ -889,19 +916,29 @@ button:hover {
 }
 @media screen and (max-width: 900px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 400px;
+    top: 420px;
     left: 20%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .thirdPageContainer .thirdPage .right img {
+    scale: 0.9;
+  }
+}
+@media screen and (max-width: 700px) {
+  .thirdPageContainer .thirdPage .right img {
+    scale: 0.8;
+    top: 390px;
+    left: 12%;
   }
 }
 @media screen and (max-width: 650px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 400px;
-    left: 15%;
+    max-width: 70vw;
   }
 }
 @media screen and (max-width: 550px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 445px;
     left: 50px;
     max-width: calc(100vw - 100px);
     min-width: calc(100vw - 100px);
@@ -909,39 +946,39 @@ button:hover {
 }
 @media screen and (max-width: 509px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 485px;
+    top: 450px;
     left: 50px;
     max-width: calc(100vw - 100px);
   }
 }
 @media screen and (max-width: 489px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 500px;
-  }
-}
-@media screen and (max-width: 453px) {
-  .thirdPageContainer .thirdPage .right img {
-    top: 496px;
+    top: 470px;
   }
 }
 @media screen and (max-width: 426px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 525px;
+    top: 516px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .thirdPageContainer .thirdPage .right img {
+    top: 500px;
   }
 }
 @media screen and (max-width: 400px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 564px;
+    top: 538px;
   }
 }
 @media screen and (max-width: 377px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 608px;
+    top: 628px;
   }
 }
 @media screen and (max-width: 373px) {
   .thirdPageContainer .thirdPage .right img {
-    top: 608px;
+    top: 607px;
   }
 }
 .thirdPageContainer .thirdPage .right .One {

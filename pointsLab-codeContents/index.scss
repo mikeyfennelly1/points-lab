@@ -705,8 +705,25 @@ button:hover {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #001319;
+    overflow: hidden;
     @media screen and (max-width: 900px) {
         min-height: 1200px;
+        padding-bottom: 0px;
+    }
+    @media screen and (max-width: 750px) {
+        min-height: 1150px;
+    }
+    @media screen and (max-width: 700px) {
+        min-height: 1100px;
+    }
+    @media screen and (max-width: 600px) {
+        min-height: 1050px;
+    }
+    @media screen and (max-width: 450px) {
+        min-height: 1000px;
+    }
+    @media screen and (max-width: 400px) {
+        min-height: 1050px;
     }
     .thirdPage {
         position: relative;
@@ -818,41 +835,47 @@ button:hover {
                 border-radius: 20px;
                 transition: 0.25s ease-in-out;
                 @media screen and (max-width: 900px) {
-                    top: 400px;
+                    top: 420px;
                     left: 20%;
                 }
+                @media screen and (max-width: 750px) {
+                    scale: 0.9;
+                }
+                @media screen and (max-width: 700px) {
+                    scale: 0.8;
+                    top: 390px;
+                    left: 12%;
+                }
                 @media screen and (max-width: 650px) {
-                    top: 400px;
-                    left: 15%;
+                    max-width: 70vw;
                 }
                 @media screen and (max-width: 550px) {
-                    top: 445px;
                     left: 50px;
                     max-width: calc(100vw - 100px);
                     min-width: calc(100vw - 100px);
                 }
                 @media screen and (max-width: 509px) {
-                    top: 485px;
+                    top: 450px;
                     left: 50px;
                     max-width: calc(100vw - 100px);
                 }
                 @media screen and (max-width: 489px) {
-                    top: 500px;
-                }
-                @media screen and (max-width: 453px) {
-                    top: 496px;
+                    top: 470px;
                 }
                 @media screen and (max-width: 426px) {
-                    top: 525px;
+                    top: 516px;
+                }
+                @media screen and (max-width: 426px) {
+                    top: 500px;
                 }
                 @media screen and (max-width: 400px) {
-                    top: 564px;
+                    top: 538px;
                 }
                 @media screen and (max-width: 377px) {
-                    top: 608px;
+                    top: 628px;
                 }
                 @media screen and (max-width: 373px) {
-                    top: 608px;
+                    top: 607px;
                 }
             }
             .One {

@@ -276,7 +276,7 @@ button:hover {
                         margin-right: 20px;
                         margin-top: 50px;
                         margin-bottom: 80px;
-                    color: black;
+                        color: black;
                     filter: drop-shadow(3px 3px #000000);
                     @media screen and (max-width: 768px) {
                         max-width: none;
@@ -300,6 +300,7 @@ button:hover {
                     }
                 }
                 .arrow {
+                    transition: ease-in;
                     position: absolute;
                     max-width: 60px;
                     z-index: -1;
@@ -307,7 +308,7 @@ button:hover {
                     left: 277px;
                 }
                 .arrowLine {
-                    transition: ease-in-out;
+                    transition: ease-in;
                     padding-left: 20px;
                     border-top: 3px solid #009B6C;
                     padding-right: 20px;
@@ -501,6 +502,7 @@ button:hover {
         padding-bottom: 75px;
     }
     .container {
+        position: relative;
         background-color: #001319;
         max-width: 1500px;
         justify-content: center;
@@ -562,9 +564,9 @@ button:hover {
     .contentInactive {
         display: none; 
     }
-    // img {
-    //     filter: drop-shadow(10px 10px 5px #00000039);
-    // }
+    line {
+        top: 0px;
+    }
 }
 
 .traceLine {
@@ -853,20 +855,16 @@ button:hover {
                     top: 608px;
                 }
             }
-            .One:hover {
-                transition: 0.25s ease-in-out;
+            .One {
                 transform: translate(-60px, -5px) rotate(-3deg);
                 filter: drop-shadow(2px 4px 6px black);
-                cursor: pointer;
-                +.Two {
-                    transition: 0.25s ease-in-out;
-                    filter: drop-shadow(2px 4px 6px black);
-                    transform: translate(67px, 10px);
-                }
-                +.Three {
-                    transition: 0.25s ease-in-out;
-                    transform: translate(92px, 10px) rotate(10deg);
-                }
+            }
+            .Two {
+                filter: drop-shadow(2px 4px 6px black);
+                transform: translate(67px, 10px);
+            }
+            .Three {
+                transform: translate(92px, 10px) rotate(10deg);
             }
         }
     }

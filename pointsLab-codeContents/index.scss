@@ -147,6 +147,7 @@ body {
     }
     .second2items {
         a {
+            cursor: pointer;
             @media screen and (max-width: 800px) {
                 display: none;
             }
@@ -154,6 +155,9 @@ body {
         .button {
             @media screen and (max-width: 800px) {
                 display: none;
+                :hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -161,11 +165,16 @@ body {
         @media screen and (max-width: 800px) {
             display: none;
         }
+        :hover {
+            cursor: pointer;
+        }
     }
     .burgerMenu {
         display: block;
         max-height: 30px;
-        cursor: pointer;
+        :hover {
+            cursor: pointer;
+        }
         @media screen and (min-width: 800px) {
             display: none;
         }
@@ -183,6 +192,133 @@ button:hover {
     cursor: pointer;
     background-color: rgb(12, 12, 12);
     color: $primaryGrey;
+}
+
+.tintBackgroundActive {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000080;
+    z-index: 9;
+}
+.tintBackgroundInactive {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000000;
+    z-index: 9;
+}
+
+.sideNavClicked {
+    top: 0;
+    left: 0;
+    transition: ease-in-out;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 400px;
+    background-color: #001319;
+    ul {
+        padding-left: 30px;
+        :nth-child(4) {
+            padding-bottom: 50px;
+        }
+        li {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: white;
+            font-size: 20px;
+        }
+        .buttonContainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            padding-right: 30px;
+            border-top: 1px solid #ffffff6c;
+            .button1 {
+                color: black;
+                max-width: fit-content;
+                background-color: #009B6C;
+                border-radius: 5px;
+                padding: 10px;
+                border: 1px solid black;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+            .button2 {
+                color: black;
+                max-width: fit-content;
+                background-color: $primaryYellow;
+                border-radius: 5px;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: 1px solid black;
+                color: black;
+                font-size: 20px;
+                font-weight: 550;
+            }
+        }
+    }
+}
+.sideNavHidden {
+    transition: ease-in-out;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 10;
+    height: 100vh;
+    width: 400px;
+    background-color: #001319;
+    ul {
+        padding-left: 30px;
+        :nth-child(4) {
+            padding-bottom: 50px;
+        }
+        li {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: white;
+            font-size: 20px;
+        }
+        .buttonContainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            padding-right: 30px;
+            border-top: 1px solid #ffffff6c;
+            .button1 {
+                color: black;
+                max-width: fit-content;
+                background-color: #009B6C;
+                border-radius: 5px;
+                padding: 10px;
+                border: 1px solid black;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+            .button2 {
+                color: black;
+                max-width: fit-content;
+                background-color: $primaryYellow;
+                border-radius: 5px;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: 1px solid black;
+                color: black;
+                font-size: 20px;
+                font-weight: 550;
+            }
+        }
+    }
+    // display: none;
 }
 
 .mainLandingContent {
@@ -432,6 +568,12 @@ button:hover {
         }
         @media screen and (max-width: 500px) {
             height: 660px;
+        }
+        @media screen and (max-width: 369px) {
+            height: 736px;
+        }
+        @media screen and (max-width: 344px) {
+            height: 760px;
         }
     }
 

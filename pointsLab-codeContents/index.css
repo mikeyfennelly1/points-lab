@@ -141,6 +141,9 @@ body {
   border: 1px solid black;
   color: black;
 }
+.topnav .second2items a {
+  cursor: pointer;
+}
 @media screen and (max-width: 800px) {
   .topnav .second2items a {
     display: none;
@@ -150,15 +153,23 @@ body {
   .topnav .second2items .button {
     display: none;
   }
+  .topnav .second2items .button :hover {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 800px) {
   .topnav .linksLeft {
     display: none;
   }
 }
+.topnav .linksLeft :hover {
+  cursor: pointer;
+}
 .topnav .burgerMenu {
   display: block;
   max-height: 30px;
+}
+.topnav .burgerMenu :hover {
   cursor: pointer;
 }
 @media screen and (min-width: 800px) {
@@ -178,6 +189,138 @@ button:hover {
   cursor: pointer;
   background-color: rgb(12, 12, 12);
   color: #D9D9D9;
+}
+
+.tintBackgroundActive {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  z-index: 9;
+}
+
+.tintBackgroundInactive {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9;
+}
+
+.sideNavClicked {
+  top: 0;
+  left: 0;
+  transition: ease-in-out;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 400px;
+  background-color: #001319;
+}
+.sideNavClicked ul {
+  padding-left: 30px;
+}
+.sideNavClicked ul :nth-child(4) {
+  padding-bottom: 50px;
+}
+.sideNavClicked ul li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+.sideNavClicked ul .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4235294118);
+}
+.sideNavClicked ul .buttonContainer .button1 {
+  color: black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #009B6C;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-weight: 550;
+}
+.sideNavClicked ul .buttonContainer .button2 {
+  color: black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #FFE600;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.sideNavHidden {
+  transition: ease-in-out;
+  position: absolute;
+  top: 0;
+  left: -400px;
+  z-index: 10;
+  height: 100vh;
+  width: 400px;
+  background-color: #001319;
+}
+.sideNavHidden ul {
+  padding-left: 30px;
+}
+.sideNavHidden ul :nth-child(4) {
+  padding-bottom: 50px;
+}
+.sideNavHidden ul li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+.sideNavHidden ul .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4235294118);
+}
+.sideNavHidden ul .buttonContainer .button1 {
+  color: black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #009B6C;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-weight: 550;
+}
+.sideNavHidden ul .buttonContainer .button2 {
+  color: black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #FFE600;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  font-weight: 550;
 }
 
 .mainLandingContent .contentContainer {
@@ -474,6 +617,16 @@ button:hover {
 @media screen and (max-width: 500px) {
   .heightAdjuster2 {
     height: 660px;
+  }
+}
+@media screen and (max-width: 369px) {
+  .heightAdjuster2 {
+    height: 736px;
+  }
+}
+@media screen and (max-width: 344px) {
+  .heightAdjuster2 {
+    height: 760px;
   }
 }
 

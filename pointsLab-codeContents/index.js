@@ -20,17 +20,15 @@ line.style.top = offsetLineInitial + 5 + "px";
 // Side navbar
 const burgerMenu = document.querySelector('.burgerMenu');
 const x = document.querySelector('.x');
-const sidebar = document.querySelector('.sideNavHidden');
+const sidebar = document.querySelector('.sideNav');
 
 burgerMenu.addEventListener('click', (event)=>{
-    sidebar.classList.remove('sideNavHidden');
-    sidebar.classList.add('sideNavClicked');
+    sidebar.style.left = '0px';
     burgerMenu.style.display = 'none';
     x.style.display = 'block';
 })
 x.addEventListener('click', (event)=>{
-    sidebar.classList.remove('sideNavClicked');
-    sidebar.classList.add('sideNavHidden');
+    sidebar.style.left = '-400px';
     burgerMenu.style.display = 'block';
     x.style.display = 'none';
 })

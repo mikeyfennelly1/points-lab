@@ -171,6 +171,7 @@ body {
 .topnav .burgerMenu {
   display: block;
   max-height: 30px;
+  cursor: pointer;
 }
 @media screen and (min-width: 800px) {
   .topnav .burgerMenu {
@@ -180,6 +181,7 @@ body {
 .topnav .x {
   display: none;
   max-height: 30px;
+  cursor: pointer;
 }
 @media screen and (min-width: 800px) {
   .topnav .x {
@@ -207,6 +209,7 @@ button:hover {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5019607843);
   z-index: 9;
+  pointer-events: none;
 }
 
 .tintBackgroundInactive {
@@ -367,7 +370,7 @@ button:hover {
   position: relative;
   padding-left: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin {
     margin-bottom: 50px;
     padding-left: 0px;
@@ -398,7 +401,7 @@ button:hover {
   color: black;
   filter: drop-shadow(3px 3px #000000);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin .button {
     max-width: none;
     width: calc(100vw - 40px);
@@ -415,7 +418,7 @@ button:hover {
   text-decoration: none;
   margin-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin a {
     padding-left: 0px;
     padding-right: 0px;
@@ -432,7 +435,7 @@ button:hover {
   top: 73px;
   left: 295px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrowLine {
     display: none;
   }
@@ -548,6 +551,7 @@ button:hover {
   align-items: end;
   width: 100vw;
   height: 80vh;
+  min-height: 1000px;
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {

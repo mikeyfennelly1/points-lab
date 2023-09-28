@@ -17,6 +17,21 @@ offsetLineInitial = activeLocation.top - containerLocation.top;
 console.log(offsetLineInitial)
 line.style.top = offsetLineInitial + 5 + "px";
 
+// Side navbar
+const burgerMenu = document.querySelector('.burgerMenu');
+const sidebar = document.querySelector('.sideNavHidden');
+console.log(burgerMenu)
+
+function sidebarFunction() {
+    sidebar.classList.remove('.sideNavHidden');
+    sidebar.classList.add('.sideNavClicked');
+}
+
+// burgerMenu.addEventListener('click', (event)=>{
+//     sidebar.classList.remove('.sideNavHidden');
+//     sidebar.classList.add('.sideNavClicked');
+// })
+
 
 // tabs feature
 

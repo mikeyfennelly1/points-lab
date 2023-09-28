@@ -300,7 +300,7 @@ button:hover {
                     }
                 }
                 .arrow {
-                    transition: ease-in;
+                    transition: ease-in-out;
                     position: absolute;
                     max-width: 60px;
                     z-index: -1;
@@ -308,7 +308,7 @@ button:hover {
                     left: 277px;
                 }
                 .arrowLine {
-                    transition: ease-in;
+                    transition: ease-in-out;
                     padding-left: 20px;
                     border-top: 3px solid #009B6C;
                     padding-right: 20px;
@@ -874,12 +874,15 @@ button:hover {
     width: 100vw;
     position: relative;
     z-index: 4;
-    height: 530px;
     background-color: #272f34;
     display: flex;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 50px;
+    height: 300px;
+    @media screen and (max-width: 1090px) {
+        height: 530px;
+    }
     .fourthPage {
         margin-left: calc(0.5*(100vw - 1500px));
         display: grid;
@@ -891,13 +894,18 @@ button:hover {
         .lhs {
             padding-right: 100px;
             display: inline;
-            max-height: 300px;
-            width: 80%;
+            min-height: 200px;
+            width: 40%;
+            max-width: 600px;
+            position: absolute;
             left: calc(0.5*(100vw - 1500px));
             padding-left: 30px;
             @media screen and (max-width: 1090px) {
                 width: 80%;
                 width: 40%;
+            }
+            @media screen and (max-width: 1500px) {
+                left: 10px;
             }
             h1 {
                 font-family: 'Merriweather';
@@ -956,12 +964,15 @@ button:hover {
         }
         .rhs {
             display: flex;
+            position: absolute;
             flex-wrap: nowrap;
             padding-left: 50px;
             max-height: 300px;
             overflow-x: auto;
             @media screen and (max-width: 1090px) {
                 margin-top: 50px;
+                top: 300px;
+                left: 30px;
             }
             filter: drop-shadow(10px 10px black);
             .carousel {

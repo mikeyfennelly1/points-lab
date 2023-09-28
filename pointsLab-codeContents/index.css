@@ -422,16 +422,8 @@ button:hover {
     margin-right: 0px;
   }
 }
-.mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
-  transition: ease-in-out;
-  position: absolute;
-  max-width: 60px;
-  z-index: -1;
-  top: 67px;
-  left: 277px;
-}
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrowLine {
-  transition: ease-in-out;
+  transition: 0.25s ease-in-out;
   padding-left: 20px;
   border-top: 3px solid #009B6C;
   padding-right: 20px;
@@ -446,8 +438,13 @@ button:hover {
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
+  transition: 0.25s ease-in-out;
+  position: absolute;
+  max-width: 60px;
+  z-index: -1;
+  top: 67px;
+  left: 277px;
   fill: none;
-  transition: ease-in-out;
   position: absolute;
   stroke: #009B6C;
   stroke-linecap: round;

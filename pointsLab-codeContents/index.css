@@ -327,6 +327,7 @@ button:hover {
   }
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrow {
+  transition: ease-in;
   position: absolute;
   max-width: 60px;
   z-index: -1;
@@ -334,7 +335,7 @@ button:hover {
   left: 277px;
 }
 .mainLandingContent .contentContainer .contentLeft .tryORlogin .arrowLine {
-  transition: ease-in-out;
+  transition: ease-in;
   padding-left: 20px;
   border-top: 3px solid #009B6C;
   padding-right: 20px;
@@ -548,6 +549,7 @@ button:hover {
   }
 }
 .preContainer .container {
+  position: relative;
   background-color: #001319;
   max-width: 1500px;
   justify-content: center;
@@ -614,6 +616,9 @@ button:hover {
 }
 .preContainer .contentInactive {
   display: none;
+}
+.preContainer line {
+  top: 0px;
 }
 
 .traceLine {
@@ -939,19 +944,15 @@ button:hover {
     top: 608px;
   }
 }
-.thirdPageContainer .thirdPage .right .One:hover {
-  transition: 0.25s ease-in-out;
+.thirdPageContainer .thirdPage .right .One {
   transform: translate(-60px, -5px) rotate(-3deg);
   filter: drop-shadow(2px 4px 6px black);
-  cursor: pointer;
 }
-.thirdPageContainer .thirdPage .right .One:hover + .Two {
-  transition: 0.25s ease-in-out;
+.thirdPageContainer .thirdPage .right .Two {
   filter: drop-shadow(2px 4px 6px black);
   transform: translate(67px, 10px);
 }
-.thirdPageContainer .thirdPage .right .One:hover + .Three {
-  transition: 0.25s ease-in-out;
+.thirdPageContainer .thirdPage .right .Three {
   transform: translate(92px, 10px) rotate(10deg);
 }
 

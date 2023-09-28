@@ -3,15 +3,19 @@ const banner = document.querySelector('.banner');
 const navbar = document.querySelector('.topnav');
 const mainLandingContent = document.querySelector('.contentLeft');
 const mainHeight = banner.offsetHeight + navbar.offsetHeight + mainLandingContent.offsetHeight;
-console.log(mainHeight);
 const heightAdjuster = document.querySelector('.heightAdjuster2');
 
 
-// heightAdjuster.style.height = mainHeight + "px"; 
-
 let line = document.querySelector('.line');
-line.style.top = heightAdjuster.offsetHeight + 915 + "px";
-console.log(line.style.top);
+// line.style.top = (activeLocation.top - 30) + "px";
+
+let container = document.querySelector('.container');
+let containerLocation = container.getBoundingClientRect();
+let active = document.querySelector('.active');
+let activeLocation = active.getBoundingClientRect();
+offsetLineInitial = activeLocation.top - containerLocation.top;
+console.log(offsetLineInitial)
+line.style.top = offsetLineInitial + 5 + "px";
 
 
 // tabs feature

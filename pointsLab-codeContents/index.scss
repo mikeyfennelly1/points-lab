@@ -906,6 +906,9 @@ button:hover {
     @media screen and (max-width: 1090px) {
         height: 530px;
     }
+    @media screen and (max-width: 480px) {
+        height: 475px;
+    }
     .fourthPage {
         margin-left: calc(0.5*(100vw - 1500px));
         display: grid;
@@ -929,6 +932,10 @@ button:hover {
             }
             @media screen and (max-width: 1500px) {
                 left: 10px;
+            }
+            @media screen and (max-width: 756px) {
+                width: 80vw;
+                min-height: 350px;
             }
             h1 {
                 font-family: 'Merriweather';
@@ -995,6 +1002,24 @@ button:hover {
             @media screen and (max-width: 1090px) {
                 margin-top: 50px;
                 top: 300px;
+                left: 30px;
+            }
+            @media screen and (max-width: 725px) {
+                left: -100px;
+                scale: 0.9;
+            }
+            @media screen and (max-width: 580px) {
+                left: -200px;
+                scale: 0.8;
+            }
+            @media screen and (max-width: 480px) {
+                margin-top: 0px;
+                left: -300px;
+                scale: 0.7;
+            }
+            @media screen and (max-width: 323px) {
+                margin-top: 50px;
+                top: 330px;
                 left: 30px;
             }
             filter: drop-shadow(10px 10px black);

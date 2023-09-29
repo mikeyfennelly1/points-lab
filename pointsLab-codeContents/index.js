@@ -14,7 +14,6 @@ let containerLocation = container.getBoundingClientRect();
 let active = document.querySelector('.active');
 let activeLocation = active.getBoundingClientRect();
 offsetLineInitial = activeLocation.top - containerLocation.top;
-console.log(offsetLineInitial)
 line.style.top = offsetLineInitial + 5 + "px";
 
 // Side navbar
@@ -47,13 +46,14 @@ tabs.forEach((tab, index)=> {
         tab.classList.remove('inactive');
         tab.classList.add('active');
 
+        
         var line = document.querySelector('.line');
         
         all_content.forEach(content=>{content.classList.remove('contentActive')})
         all_content.forEach(content=>{content.classList.add('contentInactive')})
         all_content[index].classList.add('contentActive');
         all_content[index].classList.remove('contentInactive');
-
+        
         // line.style.height = e.target.offsetHeight + "px"
         line.style.top = e.target.offsetTop + "px";
         console.log(e.target.offsetTop);
@@ -62,11 +62,8 @@ tabs.forEach((tab, index)=> {
 
 const rhs = document.querySelector('.rhs');
 const gliders = document.querySelectorAll('.glider');
-const carousel = document.querySelectorAll('.carousel')
+const carousels = document.querySelectorAll('.carousel')
 
-const carousel1 = document.querySelector('.carousel1')
-const carousel2 = document.querySelector('.carousel2')
-const carousel3 = document.querySelector('.carousel3')
 
 
 
@@ -79,6 +76,20 @@ gliders.forEach((glider, index)=> {
         
         glider.classList.remove('gliderInactive');
         glider.classList.add('gliderActive');
+        
+        let activeGliderIndex = glider.dataset.index;
+        console.log(activeGliderIndex);
+
+        carousels.forEach(function(carousel) {
+            let carouselIndex = carousel.dataset.index;
+            carousel.classList.remove("gliderInactive")
+            carousel.classList.remove("gliderActive")
+            carousel.classList.add("gliderInactive")
+            if (carouselIndex === activeGliderIndex) {
+                console.log("true for: " + carouselIndex)
+                carousel.classList.add("gliderActive")
+            }
+        });
 
         // const glider1 = document.getElementById('glider1');
         // const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;

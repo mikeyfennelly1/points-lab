@@ -1,5 +1,5 @@
 <h1 align="center">Points Lab</h1>
-<p align-items="center">
+<p align="center">
   <a href="" align="center">Link to the live site.</a>
 </p>
 

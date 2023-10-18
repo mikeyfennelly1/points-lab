@@ -5,7 +5,7 @@
 
 <blockquote align="center">A project aimed at making the Leaving Cert more accessible to daydreamers.<blockquote/>
 
-<<h1>Where the idea came from.</h1>
+<h1>Where the idea came from.</h1>
 Growing up I never liked school and was always a dreamer. I wasn't stupid, however wasn't suited to the in person environment of school, where you only had the opportunity to grasp a topic once. I would spend my days perpetually bored. Points Lab is intended to be the solution to this problem, because it replicates the solution that I found, however further enhances this tactic that proved very effective in my own leaving cert.
 
 <h1>Self Teaching</h1>

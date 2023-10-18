@@ -13,4 +13,4 @@ I began trying to teach maths in September of 2022, and saw the effects almost i
 
 
 
-<img href="(https://github.com/mikeyfennelly1/points-lab/assets/69752449/33fa0b9b-3ca5-4a08-8613-c6afd099206e)"></img>
+![MacBook Pro 16_ - 1](https://github.com/mikeyfennelly1/points-lab/assets/69752449/abac37af-42e0-42d4-b764-8f702301e6c7)

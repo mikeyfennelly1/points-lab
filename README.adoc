@@ -16,6 +16,10 @@ Points Lab is a service wherein students can access all of the tutorials that th
 Growing up I was always a dreamer and was never overly interested in school. I was doing poorly and decided to make a change, which proved to be remarkably effective. Here are the results of the solution that I found:
 NOTE: My results went from 194 in June 2022 to 498 in June 2023. Exams in 2022 are scored on topics covered between January 2022 and June 2022. Exams in 2023 are scored on topics covered between September 2021 and June 2023.
 
-image:: https://github.com/mikeyfennelly1/points-lab/blob/master/README.adoc
+image:: 
 
 By going on this self teaching journey I gained the confidence that I wasn't lacking intelligence, but just wasn't suited to the traditional system of school - and with that realisation came the idea of Points Lab. Points Lab enhances my solution further by making it even more convenient and efficient.
+
+=== My experience making the website
+
+Making Points Lab was a good experience all the way from design to development. 

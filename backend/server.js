@@ -1,4 +1,11 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose')
 
-app.listen(3004, () => console.log("Server started on port 3004"))
+mongoose.connect(process.env.DATABASE_URL, {useNewURLParser: true});
+const db = mongoose.connection
+db.on('error', (error) => console.error(error));
+db.once('open', () => console.log('Connected to Database'));
+
+app.listen(3004, () => console.log(`Server started on port ${process.env.DATABASE_URL}`))

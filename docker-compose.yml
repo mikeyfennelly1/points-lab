@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mongodb1:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata1:/data/db1
+  mongodb2:
+    image: mongo:6-jammy
+    ports:
+      - '27018:27017'
+    volumes:
+      - dbdata2:/data/db2
+volumes:
+  dbdata1:
+  dbdata2:  

@@ -5,6 +5,7 @@ const subscriber = require('../models/subscriber')
 
 // Getting all
 router.get('/', async (req, res) => {
+    res.send('The Mike and the Ron')
     try{
         const subscribers = await Subscriber.find()
     } catch {
@@ -27,7 +28,7 @@ router.post('/', async (req, res) => {
         const newSubscriber = await subscriber.save()
         res.status(201).json(newSubscriber)
     } catch (err) {
-        res.status(400).json({ message: 'Deleted Subscriber' })
+        res.status(400).json({ message: err.message })
     }
 })
 

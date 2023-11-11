@@ -95,3 +95,17 @@ gliders.forEach((glider, index)=> {
         // const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
     })
 });
+
+
+
+
+
+const subscribersUrl = 'http://localhost:3000/subscribers'
+
+async function getData() {
+    const request = await fetch(subscribersUrl)
+    const data = await response.json()
+    console.log(data)
+} 
+
+getData()

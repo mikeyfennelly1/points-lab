@@ -38,7 +38,6 @@ The sources for the {figma}[Figma] design are in the link:./figma[figma] folder.
 
 === Implementing with HTML and CSS/SASS
 
-*Mikey TODO*: Something about learning HTML
 
 I decided to develop the CSS/styling in {sass}[SASS] to try the structural and organisation benefits Vs raw CSS. I used Visual Studio Code (with the SaSS extension installed) as my IDE.
 

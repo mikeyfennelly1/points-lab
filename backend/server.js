@@ -1,5 +1,6 @@
 require('dotenv').config()
 const fs = require('fs').promises;
+const path = require('path')
 
 const express = require('express');
 const app = express();
@@ -17,44 +18,47 @@ db.once('open', () => console.log('Connected to Database'));
 
 app.use(express.json())
 
-app.get('/index.html', async (req, res) => {
-    try {
-      // Specify the path to your HTML file
-      const filePath = '../pointsLab-codeContents/index.html';
+app.use(express.static(path.join(__dirname, 'public')));
 
-      // Read the file content
-      const fileContent = await fs.readFile(filePath, 'utf-8');
-  
-      // Set the content type in the response header
-      res.setHeader('Content-Type', 'text/html');
-  
-      // Send the file content as the response
-      res.send(fileContent);
-    } catch (error) {
-      // Handle errors, e.g., file not found
-      res.status(500).send('Internal Server Error: ' + error);
-    }
-  });
+const getFile = (fileName) => {
+    app.get(fileName, async (req, res) => {
 
-  app.get('/index.js', async (req, res) => {
-    try {
-      // Specify the path to your JavaScript file
-      const filePath = '../pointsLab-codeContents/index.js';
+        function getMimeType(fileName) {
+            const fileExtension = fileName.split('.').pop().toLowerCase();
+            
+            const mimeTypesMap = new Map();
+        
+            mimeTypesMap.set('js', 'application/javascript');
+            mimeTypesMap.set('css', 'text/css');
+            mimeTypesMap.set('html', 'text/html');
 
-      // Read the file content
-      const fileContent = await fs.readFile(filePath, 'utf-8');
-  
-      // Set the content type in the response header
-      res.setHeader('Content-Type', 'application/javascript');
+            mimeType = mimeTypesMap.get(fileExtension);
+            return mimeType;
+        }
+        thisMimeType = getMimeType(fileName)
+        
+        console.log(thisMimeType)
+        
+        try {
+            const filePath = `../pointsLab-codeContents/${fileName}`;
+
+            const fileContent = await fs.readFile(filePath, 'utf-8');
+
+            res.setHeader('Content-Type', thisMimeType)
+
+            res.send(fileContent);
+        } catch {
+            res.status(500).send('Internal Server Error: ' + error);
+        }
+    })
+}
 
 
-      // Send the file content as the response
-      res.send(fileContent);
-    } catch (error) {
-      // Handle errors, e.g., file not found
-      res.status(500).send('Internal Server Error: ' + error);
-    }
-  });
+getFile('/index.html');
+getFile('/index.js');
+getFile('/index.css');
+
+
 
 app.use('/subscribers', subscribersRouter)
 

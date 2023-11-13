@@ -47,6 +47,10 @@ In retrospect, I don't think that I took full advantage of the perks of {sass}[S
 
 The HTML and SASS sources are in the link:./pointsLab-codeContents[pointsLab-codeContents] folder.
 
+== My experience using JavaScript
+
+I decided to use just raw JavaScript to develop this frontend as I wanted to start learning to code from the ground up at the time I was building this page. I found it to not be as difficult as I had expected it to be and used it to create various dynamic elements of the page e.g the 'Built by students for students' section.
+
 == Where the idea for Points Lab came from
 
 Growing up I was always a dreamer and was never overly interested in school. I was doing poorly and decided to make a change, which proved to be remarkably effective. Here are the results of the solution that I found:

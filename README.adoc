@@ -25,7 +25,6 @@ Since this is my first attempt at a website, I wanted to keep a narrow scope in 
 2. *Development*: Learn how to use HTML and CSS (via {sass}[SASS]) to implement the {figma}[Figma] design.
   * I also wanted to use this opportunity to learn how to use Git/GitHub to maintain a good change history for the work I was doing.
 
-NOTE: I intentionally didn't get into Javascript etc. on this project.
 
 === Designing with Figma
 
@@ -54,6 +53,6 @@ The HTML and SASS sources are in the link:./pointsLab-codeContents[pointsLab-cod
 Growing up I was always a dreamer and was never overly interested in school. I was doing poorly and decided to make a change, which proved to be remarkably effective. Here are the results of the solution that I found:
 NOTE: My results went from 194 in June 2022 to 498 in June 2023. Exams in 2022 are scored on topics covered between January 2022 and June 2022. Exams in 2023 are scored on topics covered between September 2021 and June 2023.
 
-image:images/percentageGraph2.jpg[]
+image:[images/percentageGraph2.jpg]
 
 By going on this self teaching journey I gained the confidence that I wasn't lacking intelligence, but just wasn't suited to the traditional system of school - and with that realisation came the idea of Points Lab. Points Lab enhances my solution further by making it even more convenient and efficient.

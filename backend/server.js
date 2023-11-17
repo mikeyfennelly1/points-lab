@@ -60,10 +60,6 @@ const sendFile = async (filePath, res) => {
         const thisMimeType = getMimeType(filePath)
         const fileContent = await fs.readFile(filePath);
 
-        console.log("***")
-        console.log(fileContent)
-        console.log("***")
-
         res.setHeader('Content-Type', thisMimeType)
         res.setHeader('Cache-Control', 'public, max-age=345600'); // 4 days
         res.setHeader('Expires', new Date(Date.now() + 345600000).toUTCString());

@@ -551,7 +551,7 @@ button:hover {
   align-items: end;
   width: 100vw;
   height: 80vh;
-  min-height: 1000px;
+  /* min-height: 1000px; */
 }
 @media screen and (max-width: 897px) {
   .heightAdjuster2 {

@@ -30,31 +30,31 @@ $primaryYellow: #FFE600;
     min-width: 100px;
 }
 @font-face {
-    src: url(./Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
     font-family: "Montserrat-Variable";
 }
 @font-face {
-    src: url(./Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
     font-family: "Montserrat-Italic-Variable";
 }
 @font-face {
-    src: url(./Merriweather-Regular.ttf);
+    src: url(../fonts/Merriweather-Regular.ttf);
     font-family: "Merriweather";
 }
 @font-face {
-    src: url(./Merriweather-Italic.ttf);
+    src: url(../fonts/Merriweather-Italic.ttf);
     font-family: "Merriweather-Italic";
 }
 @font-face {
-    src: url(./Merriweather-Light.ttf);
+    src: url(../fonts/Merriweather-Light.ttf);
     font-family: "Merriweather-Light";
 }
 @font-face {
-    src: url(./Merriweather-Bold.ttf);
+    src: url(../fonts/Merriweather-Bold.ttf);
     font-family: "Merriweather-Bold";
 }
 @font-face {
-    src: url(./SourceCodePro-VariableFont_wght.ttf);
+    src: url(../fonts/SourceCodePro-VariableFont_wght.ttf);
     font-family: "Source-Code-Pro-Variable";
 }
 
@@ -511,10 +511,8 @@ button:hover {
         align-items: end;
         width: 100vw;
         height: 80vh; // this is adjusted in index.js regardless
-        // min-height: 1000px;
-        // border: 3px solid red;
         @media screen and (max-width: 897px) {
-            height: 908px;
+            height: 500px;
         }
         @media screen and (max-width: 768px) {
             height: 996px;

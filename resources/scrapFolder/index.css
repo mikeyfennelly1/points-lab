@@ -239,10 +239,13 @@ button:hover {
 }
 .sideNav .sideNav-top img {
   position: absolute;
-  top: 40px;
+  top: 30px;
   z-index: 100;
   left: 75%;
-  max-height: 50px;
+  max-height: 40px;
+}
+.sideNav .sideNav-top img:hover {
+  cursor: pointer;
 }
 .sideNav ul {
   padding-left: 30px;

@@ -18,7 +18,8 @@ line.style.top = offsetLineInitial + 5 + "px";
 
 // Side navbar
 const burgerMenu = document.querySelector('.burgerMenu');
-const x = document.querySelector('.x');
+const x = document.querySelectorAll('.x');
+const MainX = document.getElementById('#mainX');
 const sidebar = document.querySelector('.sideNav');
 
 burgerMenu.addEventListener('click', (event)=>{
@@ -26,11 +27,14 @@ burgerMenu.addEventListener('click', (event)=>{
     burgerMenu.style.display = 'none';
     x.style.display = 'block';
 })
-x.addEventListener('click', (event)=>{
-    sidebar.style.left = '-400px';
-    burgerMenu.style.display = 'block';
-    x.style.display = 'none';
+x.forEach((element) => {
+    element.addEventListener('click', (event)=>{
+        sidebar.style.left = '-400px';
+        burgerMenu.style.display = 'block';
+        MainX.style.display = 'none';
+    })
 })
+
 
 
 // tabs feature

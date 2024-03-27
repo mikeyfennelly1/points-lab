@@ -4,6 +4,7 @@
 :sass: https://sass-lang.com
 
 = Points Lab
+image::/resources/images/PL_youtube_logo.png[thumbnail, link=https://youtu.be/B1VlPPYB6y8]
 
 == What is Points Lab?
 
